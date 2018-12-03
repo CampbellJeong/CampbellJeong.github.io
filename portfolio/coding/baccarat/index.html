@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style-index.css">
+    <link href="https://fonts.googleapis.com/css?family=Cute+Font|East+Sea+Dokdo|Sunflower:300" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+
+    <title>바카라 게임</title>
+</head>
+
+<body oncontextmenu='return false' ondragstart="return false">
+    <div class="wrap0">
+        <div class="wrap">
+            <div class="chip" id="chip">
+                <button type="button" class="2kchip chipbutton-2k">
+                </button>
+                <button type="button" class="10kchip chipbutton-10k">
+                </button>
+                <button type="button" class="50kchip chipbutton-50k">
+                </button>
+                <!--
+<img src="images/2k.png" class="2kchip" width="55px;"><img src="images/10k.png" class="10kchip" width="58px;">
+                <img src="images/50k.png" class="50kchip" width="62px;">-->
+                <h3 class="chipword">↑ 위 칩들을 클릭한 뒤 Bet 버튼과 Start 버튼을 누르세요.</h3>
+            </div>
+            <button type="button" id="playerbet">
+            </button>
+            <button type="button" id="bankerbet">
+            </button>
+            <button type="button" id="tiebet">
+            </button>
+            <button type="button" id="start" class="start" title="본게임에 슈퍼식스와 페어는 없습니다.">
+            </button>
+            <button type="button" id="reset">
+            </button>
+            <button type="button" id="allin">
+            </button>
+            <div class="gamerule" onclick="rule()">Baccarat rule</div>
+        </div>
+        <div class="card0">
+            <img src="images/Gray_back.jpg" class="playercard1 sixcard" id="p1">
+            <img src="images/Gray_back.jpg" class="playercard2 sixcard" id="p2">
+            <img src="images/Gray_back.jpg" class="playercard3 sixcard" id="p3">
+            <img src="images/Gray_back.jpg" class="bankercard1 sixcard" id="b1">
+            <img src="images/Gray_back.jpg" class="bankercard2 sixcard" id="b2">
+            <img src="images/Gray_back.jpg" class="bankercard3 sixcard" id="b3">
+        </div>
+        <div class="calc">
+            <div>
+                <table>
+                    <tr>
+                        <td>플레이어 베팅액:</td>
+                        <td><input type="number" value="0" style='text-align: right;width:70px;' class="playerbetamount" disabled>만원</td>
+                    </tr>
+                    <tr>
+                        <td>뱅커 베팅액:</td>
+                        <td><input type="number" value="0" style='text-align: right;width:70px;' class="bankerbetamount" disabled>만원</td>
+                    </tr>
+                    <tr>
+                        <td>타이 베팅액:</td>
+                        <td><input type="number" value="0" style='text-align: right;width:70px;' class="tiebetamount" disabled>만원</td>
+                    </tr>
+                    <tr>
+                        <td><b>총 베팅액:</b></td>
+                        <td><input type="number" value="0" style='text-align: right;width:70px;' id="betamounttotal" class="betamounttotal" disabled>만원</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="totalamount">
+                <h3>현재 소지금:<input type="number" value="100" class="totalamountinput" id="totalamountinput" disabled>만원</h3>
+            </div>
+
+        </div>
+        <h1 class="resultword">게임방법: 칩 클릭 > 베팅버튼 클릭 > 스타트</h1>
+
+    </div>
+    <div class="pchip">
+        <ul>
+            <li><img src="" class="pchip-2kchip"></li>
+            <li><img src="" class="pchip-10kchip"></li>
+            <li><img src="" class="pchip-50kchip"></li>
+        </ul>
+    </div>
+    <div class="bchip">
+        <ul>
+            <li><img src="" class="bchip-2kchip"></li>
+            <li><img src="" class="bchip-10kchip"></li>
+            <li><img src="" class="bchip-50kchip"></li>
+        </ul>
+    </div>
+    <div class="tchip">
+        <ul>
+            <li><img src="" class="tchip-2kchip"></li>
+            <li><img src="" class="tchip-10kchip"></li>
+            <li><img src="" class="tchip-50kchip"></li>
+        </ul>
+    </div>
+
+    <!--기록지-->
+    <div class="record">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <footer onclick="location.href='http://shlove8696.dothome.co.kr/portfolio/cording/baccarat/index.html'">
+        <div>
+            <p>2018 ALL COPYRIGHTS RESERVED. [JungSungHwan]</p>
+        </div>
+    </footer>
+ 
+    <script src="js/baccarat-logic.js"></script>
+</body>
+
+</html>

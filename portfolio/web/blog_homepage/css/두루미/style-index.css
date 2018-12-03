@@ -1,0 +1,206 @@
+  * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            position: absolute; /*겹치는효과쓰*/
+            top: 0;
+            left: 0;
+            z-index: 100;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+
+        .headA {
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: cadetblue;
+            text-decoration: none;
+            color: white;
+        }
+
+        .headB ul {
+          
+            list-style: none;
+        }
+        
+        .headB{
+            display: block;
+            !important;
+        }
+
+        .headB a {
+            display: block;
+            /*block으로 하면 전체가, inline-block으로 하면 딱 글씨만*/
+            padding: 15px;
+            font-size: 12px;
+            text-decoration: none;
+        }
+
+        .headB a:hover {
+            background-color: rgba(0, 0, 0, 0.3)
+        }
+        
+        .headC{
+            width: 30px;
+            height: 30px;
+            background-image: url("images//nav-icon.png");
+            background-position: center;
+            background-size: cover;
+        }
+
+        
+        
+        .footer{
+                 background-color:lightgrey;
+            color:#fff;
+        }
+        
+         .footer a{
+                text-decoration: none;
+            color:inherit; /*부모로 부터 글자색 물려받음*/
+        }
+        
+        .footB h3{
+            border-bottom: 1px solid currentColor;
+            margin-bottom: 10px;
+        }
+        
+         
+             .footer .container ul{
+             list-style: none;
+            }
+        
+         .footer .container{
+                text-align: center;
+                padding: 40px 20px;
+            }
+        
+        
+        
+        /*모바일, 태블릿용*/
+        @media all and (max-width:767px){
+            .header .container_mini{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 0 auto;
+            }
+            .headB{
+                display: none;
+            }
+            
+            
+            .footA h2{
+                font-size: 26px;
+                letter-spacing: 0.2em;
+            }
+            
+            .footA p{
+                font-size: 14px;
+                margin-bottom: 30px;
+            }
+            
+            .footB div{
+                margin-bottom: 20px;
+            }
+            
+            .footB a{
+                font-size: 12px;
+            }
+            
+            .footB a:hover{
+                background-color: rgba(0,0,0,0.3);
+               padding: 5px;/*블록을 넓혀준다.*/
+                display: block;
+            }
+            
+        }
+
+/*피씨버전*/
+        @media all and (min-width:768px) {
+            .header .container{
+                display: flex;
+                align-items: center;
+                justify-content: space-between; /*양끝에 붙음*/
+                margin: 0 auto;
+            }
+            .headB ul{
+               display: flex;
+            }
+            
+            .secB .containerB {
+                display: flex;
+                margin: 0 auto;
+            }
+
+            .secB .text {
+                flex: 1;
+                /*1:1비율*/
+            }
+
+            .secC .container {
+                display: flex;
+                margin: 0 auto;
+            }
+
+            .secD .container {
+                display: flex;
+                margin: 0 auto;
+                flex-direction: row-reverse;
+            }
+
+            .secC .text {
+                flex: 2;
+                /*비율이 5중의 2*/
+            }
+
+            .secC .photo {
+                flex: 3;
+                /*비율이 5중의 3*/
+            }
+
+            .secD .text {
+                flex: 2;
+                /*비율이 5중의 2*/
+
+            }
+
+            .secD .photo {
+                flex: 3;
+                /*비율이 5중의 3*/
+
+            }
+            .headC{
+                display: none;
+            }
+            
+            .footB{
+                display: flex;
+            }
+            .footB div{
+                flex: 1;/*비율*/
+            }
+            
+            .footer .container{
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 1000;
+                margin: 20px auto;
+            }
+            
+            .footA{
+                flex: 2;
+            }
+            
+            .footB{
+                flex: 3;
+            }
+            
+            .footC{
+                flex:0 0 100; /*구성비율, 줄어들엇을경우 사이즈비율, 픽스사이즈*/
+            }
+
+        }

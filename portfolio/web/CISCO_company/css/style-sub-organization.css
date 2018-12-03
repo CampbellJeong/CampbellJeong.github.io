@@ -1,0 +1,175 @@
+body {
+    background-image: linear-gradient(white, #8f8fcc);
+}
+
+header {
+    background-color: #e4e4e4;
+    text-align: center;
+}
+
+
+.logo {
+    position: absolute;
+    left: 3px;
+    top: 0;
+}
+
+header ul li {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 17px;
+    margin: 2px;
+    line-height: 37px;
+
+}
+
+header ul li a {
+    color: #302014;
+
+
+}
+
+header ul li a:hover {
+    font-weight: bold;
+}
+
+
+header ul li {
+    color: #302014;
+    margin-right: 50px;
+
+}
+
+/*----------------------------------------*/
+
+section {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.mainphoto div {
+      height: 150px;
+}
+
+.organization{
+
+    
+    
+}
+
+
+.mainphoto img {
+  
+}
+
+h6 {
+    font-size: 30px;
+    margin: 60px 0px 30px 0px;
+    color: darkblue;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.mainphoto p {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #302014;
+}
+
+.mainphoto img {
+    filter: drop-shadow(0px 0px 0.5rem black);
+}
+
+.award {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.award table {
+    text-align: left;
+    font-size: 17px;
+    margin-top: 10px;
+
+}
+
+.award table tr td:first-child {
+    width: 100px;
+}
+.chairman{
+    width:120px;
+    height: 25px;
+    position: relative;
+    top:-527px;
+    left:340px;
+}
+.chairmanname{
+    width:120px;
+    height: 30px;
+    position: relative;
+    top:-550px;
+    left:470px;
+    font-weight: bold;
+}
+
+.award table tr td:nth-child(2) {
+    width: 500px;
+  
+}
+
+
+.award h3 {
+    margin: 0 auto;
+    text-align: left;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td {
+    height: 40px;
+    padding-top: 4px;
+}
+
+tr{
+    border-bottom:1px solid #83767b;
+    border-top:1px solid #83767b;
+    
+}
+
+.exception{
+    border-top:1px solid #c8c1c4;
+    
+}
+
+footer {
+    background-color: #cecece;
+margin-top: 30px;
+    padding-left: 10px;
+}
+
+.footer1 li{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 15px;
+    vertical-align: middle;
+    line-height: 32px;
+    margin-right: 20px;
+}
+
+.footer2 li{
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 12px;
+     line-height: 20px;
+    color: #7d7d7d;
+}

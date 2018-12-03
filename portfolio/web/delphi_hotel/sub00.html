@@ -1,0 +1,304 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>델파이 호텔 호텔소개</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style-sub00.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--<script src="js/jquery.js"></script>-->
+
+    <script>
+        $(function() {
+            $("#menubar").hide();
+            $(".menu li a").on("mouseover", function() {
+                $("#menubar").slideDown(300);
+            });
+            $(".menu li a").on("mouseleave", function() {
+                $(this).css("background", "none")
+
+            });
+            $("#menubar").on("mouseleave", function() {
+                $("#menubar").slideUp(500);
+            });
+            $("#menubar li a").on("mouseover", function() {
+                $(this).css("background", "lightgrey")
+            });
+            $("#menubar li a").on("mouseleave", function() {
+                $(this).css("background", "none")
+            });
+        });
+
+        $(function() {
+            $(".jap").hide();
+            $(".kor a").on("click", function() {
+                $(".login2").css("background-color", "black");
+                $(".login2 li a").css("color", "white");
+                $(".login2 li a").css("font-weight", "600");
+                $(".jap").slideDown(300);
+            });
+            $(".login").on("mouseover", function() {
+                $("#menubar").slideUp(300);
+            });
+
+            $(".header2").on("mouseleave", function() {
+
+                $(".login2").css("background", "none");
+                $(".login2 li a").css("color", "#302014");
+                $(".jap").slideUp(10);
+            });
+        });
+
+        $(function() {
+            $(".inner li:first-child a").css("background", "#77726d");
+            $(".inner li:first-child a").css("color", "white");
+
+
+            $(".inner li a").on("mouseover", function() {
+                $(this).css("background", "#77726d");
+                $(this).css("color", "white");
+            })
+            $(".inner li a").on("mouseleave", function() {
+                $(this).css("background", "none");
+                $(this).css("color", "#77726d");
+                $(".inner li:first-child a").css("background", "#77726d");
+                $(".inner li:first-child a").css("color", "white");
+            })
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="maindiv">
+        <header class="header0">
+            <div class="header1">
+                <a href="index.html"><img src="images/logo.png"></a>
+            </div>
+            <div class="header2">
+                <section class="login">
+                    <ul class="login1">
+                        <li class="loginbutton"><a onclick="loginPopupOpen()" style="cursor: pointer">로그인</a> | <a onclick="loginPopupOpen()" style="cursor: pointer">예약확인</a></li>
+                    </ul>
+                    <div class="login2">
+                        <img src="images/earth.png">
+                        <select class="lang" onchange="location = this.options[this.selectedIndex].value;">
+                            <option value="index.html">한국어</option>
+                            <option value="index-english.html">English</option>
+                            <option value="index-japanese.html">日本語</option>
+                            <option value="index-chinese.html">中文</option>
+                        </select>
+                    </div>
+                </section>
+
+                <section class="menu">
+               <ul>
+                        <li><a href="sub00.html">호텔소개</a></li>
+                        <li><a href="sub01-01.html">객실안내</a></li>
+                        <li><a href="sub02.html">호텔위치</a></li>
+                        <li><a href="sub02.html">주변명소</a></li>
+                    </ul>
+                </section>
+            </div>
+        </header>
+    </div>
+    <div id="wrap0">
+        <div id="menubar">
+            <div>
+                <ul>
+                    <li><a href="sub00.html">호텔소개</a></li>
+                    <li><a href="sub00.html">예약지원</a></li>
+                    <li><a href="sub00.html">인재채용</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="sub01-01.html">스탠다드</a></li>
+                    <li><a href="sub01-02.html">디럭스</a></li>
+                    <li><a href="sub01-03.html">스위트</a></li>
+                    <li><a href="sub01-04.html">프레지던트</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="sub02.html">호텔위치</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="sub02.html">주변명소</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="wrap">
+        <div class="section1">
+            <div class="inner">
+                <h6>호텔소개</h6>
+                <hr color="#77726d" width="200px">
+                <ul>
+                    <li><a href="sub00.html">호텔소개</a></li>
+                    <li><a href="sub00.html">예약지원</a></li>
+                    <li><a href="sub00.html">인재채용</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section2">
+            <div class="upnav">
+                <ul>
+                    <li><a href=""><img src="images/home.gif" width="20px" height="20px" style="margin-bottom: 3px"></a></li>
+                    <li>&gt;</li>
+                    <li><a href="">호텔소개</a></li>
+                    <li>&gt;</li>
+                    <li><a href="">호텔소개</a></li>
+                </ul>
+            </div>
+            <br><br>
+            <div class="upline"></div>
+            <br>
+            <br>
+            <div class="smartchoice">
+                <table>
+                    <tr>
+                        <td class="smart1">
+                            <h1>델파이호텔 소개</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="smart3">
+                            <h5>델파이호텔은 델파이그룹이 새롭게 선보이는 비즈니스 호텔로,<br>델파이그룹의 가치 아래 고객이 원하는 서비스와 상품만을 엄선하여 제공합니다.</h5>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <br>
+            <hr class="dashed">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="brandvalue">
+                <h1>Brand promise</h1>
+                <br>
+                <p>델파이호텔의 브랜드 약속은 '우리는 고객들이 진정으로 바라고 희망하는 것이 무엇인지 인지하여 고객들에게 즐겁고 편안한 Hotel Experience를 제공하여 궁극적으로 Delphi hotel이 최고의 선택이 되도록한다.' 입니다.</p>
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="brandvalue">
+                <h1>Brand values</h1>
+                <br>
+                <p>델파이호텔의 브랜드가치는 <b>실용성(Practicality), 수용(Receptivity), 신뢰(Reliability)</b>입니다.</p>
+                <br>
+            </div>
+            <table class="smart4">
+                <tr class="smart4-1">
+                    <td class="smart4-2">
+                        <div>
+                            <h4>실용성 (Practicality)</h4>
+                        </div>
+                    </td>
+                    <td>
+                        <p>우리는 효율적이고 합리적인 조직의 분위기를 창출하는 데 의미를 두며, 실용의 개념에 의거하여 과다하고 불필요한 화려함 대신에 실제적인 비즈니스 호텔 상품과 서비스 모델을 창출하여 고객과 사회에 대해 고부가 가치를 창출합니다.</p>
+                    </td>
+                </tr>
+                <tr class="smart4-1">
+                    <td class="smart4-2">
+                        <div>
+                            <h4>수용(Receptivity)</h4>
+                        </div>
+                    </td>
+                    <td>
+                        <p>우리는 유연한 입장을 취하고 다양성을 존중하며 넓은 포용력의 개념에 의거하여 관대한 팀워크 분위기를 창출하는데 의미를 두며, 고객의 소리를 열린 마음으로 겸허히 청취하고 수용하여 모두에게 긍정적인 가치를 창출합니다.</p>
+                    </td>
+                </tr>
+                <tr class="smart4-1">
+                    <td class="smart4-2">
+                        <div>
+                            <h4>신뢰 (Reliability)</h4>
+                        </div>
+                    </td>
+                    <td>
+                        <p>우리는 주변 사람에 대해 신뢰를 갖고 대하며 고객 또한 항상 신뢰감있게 우리를 대할 수 있는 분위기를 조성합니다.<br>우리는 믿음이 겸손한 자세로 사람들을 친절하고 허물없이 대합니다.</p>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="brandvalue">
+                <h1>Brand for everyone</h1>
+                <br>
+                <p>델파이호텔은 커플여행, 가족여행, 호캉스 등 누구나 언제든지 방문할 수 있는 호텔을 모토로 합니다.</p>
+                <br>
+                <br>
+                <h1>TAGS</h1>
+                <br>
+                <div class="tag">
+                    <ul>
+                        <li>
+                            <img src="images/sub00-01.jpeg">
+                            <p><b>#커플</b></p>
+                        </li>
+                        <li><img src="images/sub00-02.jpg">
+                            <p><b>#친구</b></p>
+                        </li>
+                        <li><img src="images/sub00-03.jpg">
+                            <p><b>#가족</b></p>
+                        </li>
+                        <li><img src="images/sub00-04.jpg">
+                            <p><b>#혼여</b></p>
+                        </li>
+                        <li><img src="images/sub00-05.jpg">
+                            <p><b>#호캉스</b></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <br><br><br>
+    </div>
+    <div class="maindiv2">
+        <footer class="footer0">
+            <section>
+                <span id="footer1">
+                    <h2>델파이호텔</h2>
+                </span>
+                <span id="footer2">
+                    <pre>서울특별시 역삼동 경충길 210 (우:04389)   TEL 02-4423-5522   사업자등록번호 201-73-55892</pre></span>
+                <span id="footer3">
+                    <a href="">ENGLISH</a>
+                    <a href="">日本語</a>
+                    <a href="">中文</a>
+                </span>
+            </section>
+        </footer>
+    </div>
+    <script>
+           //로그인 팝업창
+        function loginPopupOpen() {
+
+            var popUrl = "index-login.html"; //팝업창에 출력될 페이지 URL
+
+            var popupX = (window.screen.width / 2) - (400 / 2);
+            // 만들 팝업창 좌우 크기의 1/2 만큼 보정값 뺌
+            var popupY = (window.screen.height / 2) - (400 / 2);
+            // 만들 팝업창 상하 크기의 1/2 만큼 보정값으로 빼주었음
+            var popOption = "width=420, height=420, resizable=no, scrollbars=no, status=no, left=" + popupX + ", right=" + popupY + ", screenX=" + popupX + ", screenY=" + popupY;
+
+            window.open(popUrl, "", popOption);
+        }
+        //////
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,323 @@
+header {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    border-bottom: 1px solid #ababab;
+    margin-top: 40px;
+    padding-left: 340px;
+    z-index: 20;
+    /*앞과의 간격*/
+}
+
+
+
+/*위에 메뉴*/
+
+header li h2 {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    font-size: 30px;
+    color: #ababab;
+    font-family: 'Cinzel', serif;
+    filter: drop-shadow(0 0 0.75rem crimson);
+
+}
+
+header ul {
+    width: 100vw;
+    z-index: 21;
+}
+
+header ul li {
+    display: inline-block;
+
+    font-size: 18px;
+    margin: 2px 20px;
+    ;
+    line-height: 47px;
+
+
+}
+
+header ul li img {
+    width: 100%;
+    vertical-align: middle;
+    /*img에 버티컬 미들 바로 적용*/
+}
+
+header ul li a {
+    color: #ababab;
+    font-family: 'Noticia Text', serif;
+}
+
+.box {
+    position: relative;
+    vertical-align: middle;
+    height: 47px;
+    line-height: 45px;
+
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+/****뜨는 효과********/
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+}
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+/*************/
+
+
+
+
+.menuimg1,
+.menuimg2 {
+    width: 20px;
+    margin: 0;
+}
+
+.menuimg1 {
+    margin-left: 20%;
+    margin-right: 10px;
+}
+
+/******************************************/
+
+.mainslide {
+    width: 100%;
+    height: 100vh;
+    background: url("../images/main1.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+
+}
+
+.headerbackground {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.gallery {
+    width: 1517px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    
+    /*가로세로를 주고 하위단을 중앙정렬할때 유용하게쓰임*/
+}
+
+.gallery hr {
+    height: 1px;
+    background-color: #bfbfbf;
+}
+
+.gallery h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.photo11 {
+    display: inline-block;
+    margin: 20px;
+    width: 280px;
+}
+
+.photo11 div {
+    width: 280px;
+    height: 100px;
+}
+
+.photo11 img {
+    width: 280px;
+    height: 420px;
+}
+
+.photo11 h5 {
+    text-align: left;
+    margin: 10px 5px;
+    font-size: 14px;
+}
+
+.photo11 h6 {
+    text-align: left;
+    margin: 10px 5px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #858585;
+}
+
+.photo11 p {
+    text-align: left;
+    font-size: 12px;
+    margin: 8px 5px;
+}
+
+.photo11 p:first-child {
+    font-size: 13px;
+}
+
+a.innerborder img:hover {
+    outline: solid rgba(195, 195, 195, 0.3) 10px;
+    outline-offset: -10px;
+    outline-style: inset;
+}
+
+footer {
+    width: 100%px;
+    margin-left: 0px;
+    text-align: center;
+
+}
+
+footer ul li {
+    color: #6b6b6b;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 8px;
+}
+
+footer ul li a{
+    color: #484848;
+}
+
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+    /*버티칼 얼라인은 해당부분에 직접 설정*/
+
+}
+
+.last {
+    width: 150px;
+    text-align: left;
+}
+
+.moneyback {
+    margin-right: 200px;
+}
+
+.cscenter {
+    margin-right: 20px;
+}
+
+footer{
+    margin-top: 100px;
+    background-color: #fcfbf9;
+    padding: 30px 0px;
+    
+}
+
+footer ul li:first-child {
+    height: 15px;
+    margin-bottom: 20px;
+}
+
+footer .cscenter li:first-child {
+    width: 75px;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+    /*버티컬 얼라인과 같이 해당 선택자에 직접 설정*/
+    margin-bottom: 20px;
+}
+
+footer .moneyback li:first-child {
+    width: 60px;
+    border-bottom: 1px solid black;
+    margin: 0 auto;
+    /*버티컬 얼라인과 같이 해당 선택자에 직접 설정*/
+    margin-bottom: 20px;
+}
+
+footer .community li:first-child {
+    width: 85px;
+    border-bottom: 1px solid black;
+    /*버티컬 얼라인과 같이 해당 선택자에 직접 설정*/
+}
+
+footer .guide li:first-child {
+    width: 41px;
+    border-bottom: 1px solid black;
+    /*버티컬 얼라인과 같이 해당 선택자에 직접 설정*/
+}
+
+footer .mypage li:first-child {
+    width: 61px;
+    border-bottom: 1px solid black;
+    /*버티컬 얼라인과 같이 해당 선택자에 직접 설정*/
+}
+
+.companyinfo {
+    text-align: left;
+    margin-left: 50px;
+    padding-top: 25px;
+}
+
+.companyinfo p{
+  font-size: 13px;
+    margin: 10px;
+}
+
+.companyinfo p:nth-child(2){
+margin-bottom: 15px;
+}

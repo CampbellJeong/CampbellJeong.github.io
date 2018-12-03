@@ -1,0 +1,517 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>STYLE-J Outer - ROU0541</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style-sub04.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <script src="js/jquery.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Noticia+Text" rel="stylesheet">
+        <script>
+        //로그인 팝업창
+        function loginPopupOpen() {
+
+            var popUrl = "index-login.html"; //팝업창에 출력될 페이지 URL
+
+            var popupX = (window.screen.width / 2) - (440 / 2);
+            // 만들 팝업창 좌우 크기의 1/2 만큼 보정값 뺌
+            var popupY = (window.screen.height / 2) - (440 / 2);
+            // 만들 팝업창 상하 크기의 1/2 만큼 보정값으로 빼주었음
+            var popOption = "width=440, height=440, resizable=no, scrollbars=no, status=no, left=" + popupX + ", right=" + popupY + ", screenX=" + popupX + ", screenY=" + popupY;
+
+            window.open(popUrl, "", popOption);
+        }
+        //////
+    </script>
+    <script>
+        var goodsselect = function() {
+            if ($("#select").val() == "색상을 선택하세요.") {
+                $("#goods").text("");
+                $("#price").text("");
+                $("#cancel").css("display", "none");
+            } else {
+                var aaa = document.getElementById("select").value;
+                document.getElementById("goods").innerHTML = aaa;
+                document.getElementById("price").innerHTML = "162,900원";
+                $("#cancel").css("display", "inherit");
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <h2>Style-J</h2>
+                </a>
+            </li>
+            <li class='box line hvr-bob'><a href="sub01-best.html">Best</a></li>
+            <li class='box line hvr-bob'><a href="sub02-new.html">New</a></li>
+            <li class='box line hvr-bob'><a href="sub03-shop.html">Shop</a></li>
+            <li class='box line hvr-bob'><a href="" title="준비중입니다.">Customer center</a></li>
+            <li class="menuimg1"><a href="#" onclick="loginPopupOpen()"><img src="images/man2.png" class="manimg" title="로그인"></a></li>
+            <li class="menuimg2"><a href=""><img src="images/cart2.png" class="cartimg" title="장바구니 (준비중입니다.)"></a></li>
+        </ul>
+    </header>
+    <section class="bigsection">
+        <div class="photosection">
+            <div class="photo00">
+                <div class="leftphoto">
+                    <img src="images/detail1.jpg">
+                    <img src="images/detail2.jpg">
+                    <img src="images/detail3.jpg">
+                    <img src="images/detail4.jpg">
+                    <img src="images/detail5.jpg">
+                </div>
+                <div class="rightphoto">
+                    <img src="images/detail1.jpg">
+                </div>
+            </div>
+            <div class="order">
+                <h5>ROU0541 :</h5>
+                <h5>HANDMADE pocket coat</h5>
+                <hr class="orderhr">
+                <span style="font-size: 15px;">판매가</span><span style="font-size: 20px;font-weight: bold;" class="amount">KRW 162,900</span>
+                <br>
+                <br>
+                <br>
+                <span style="font-size: 15px;">적립금</span><span class="amount">1,600</span>
+                <hr class="orderhr">
+                <br>
+                <span class="opt">color</span>
+                <span style="margin-left: 150px;"><select class="select" id="select" onchange="goodsselect()">
+                        <option>색상을 선택하세요.</option>
+                        <option>beige</option>
+                        <option>gray</option>
+                        <option disabled>black (품절)</option>
+                    </select></span>
+                <br>
+                <br>
+                <hr class="orderhr">
+                <span id="goods"></span><span id="price"></span>
+                <span id="cancelspan"> <img src="images/cancel.png" width="15px;" id="cancel" class="cancel"></span>
+                <div class="purchase">
+                    <div>구매하기</div>
+                    <div>장바구니</div>
+                    <div>위시리스트</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div style="clear:both" class="tabsection">
+        <dl>
+            <dt class="tab1">상품상세정보</dt>
+            <dd class="dd0">
+                <div class="md">
+                    <p>- 색상 : beige gray</p>
+                    <p>- 사이즈 : free</p>
+                    <p>- 모델착용 : 모델 세연은 베이지 컬러 프리사이즈를 착용했습니다.</p>
+                    <p>- 소재 : wool 80% poly 20%</p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="photozone">
+                    <div><img src="images/detail-goods01.png"></div>
+                    <div class="word1 goods01">
+                        <p>나긋나긋한 핸드메이드 코트에서 많이 보실 수 있는 울 80%의 원단색감에 주목해주세요.<br><br>
+                            핸드메이트 코트 치고 가격이 상당히 괜찮죠?<br><br>
+                            너무 핑크도 아닌 그렇다고 베이지라고 하기도 묘한
+                            피부톤과 어우려졌을때<br> 이질감이 거의 없는 스킨 컬러에 핑크를
+                            한방울 떨어 트린 듯한 원단입니다.<br><br>
+                            이 컬러는 스타일제이 고객님들이 특히나 좋아하시는 컬러입니다. </p>
+                    </div>
+                    <div><img src="images/detail-goods02.jpg"></div>
+                    <div><img src="images/detail-goods03.jpg"></div>
+                    <div><img src="images/detail-goods04.jpg"></div>
+                    <div><img src="images/detail-goods05.png"></div>
+                    <div><img src="images/detail-goods06.jpg"></div>
+                    <div><img src="images/detail-goods07.jpg"></div>
+                    <div><img src="images/detail-goods08.jpg"></div>
+                    <div class="sizeinfo">
+                        <img src="images/sizeinfo.png">
+                    </div>
+                    <div class="sizeinfo2">
+                        <img src="images/detail-goods09.jpg">
+                        <table class="sizetable">
+                            <tr>
+                                <td>사이즈</td>
+                                <td>총장</td>
+                                <td>어깨</td>
+                                <td>가슴</td>
+                                <td>밑단</td>
+                                <td>암홀</td>
+                                <td>소매밑단</td>
+                                <td>소매길이</td>
+                            </tr>
+                            <tr>
+                                <td>프리</td>
+                                <td>106</td>
+                                <td>41</td>
+                                <td>50</td>
+                                <td>56</td>
+                                <td>23</td>
+                                <td>15</td>
+                                <td>57</td>
+                            </tr>
+                        </table>
+                        <div class="word2">
+                            <p>- 위의 실측사이즈는'단면의 길이'입니다. 참고해 주세요.</p>
+                            <br>
+                            <p>- 사이즈는 측정방법에 따라1~3cm 정도 오차가 있을 수 있습니다.</p>
+                            <br>
+                            <p>- 제품색상은 사용자의 모니터의 해상도에 따라 실제 색상과 다소 차이가 있을 수 있습니다.</p>
+                            <br>
+                            <p>- 제품 컷의 색상이 실제 제품 색상과 가장 비슷합니다.</p>
+                        </div>
+                        <table class="sizetable2">
+                            <tr>
+                                <td>신축성</td>
+                                <td>□ 있음</td>
+                                <td>■ 없음</td>
+                                <td>□ 약간있음</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>비침</td>
+                                <td>□ 있음</td>
+                                <td>■ 없음</td>
+                                <td>□ 약간있음</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>안감</td>
+                                <td>□ 있음</td>
+                                <td>■ 없음</td>
+                                <td>□ 약간있음</td>
+                                <td></td>
+                            </tr>
+                        </table>
+
+                        <div class="generalinfo">
+                            <h5 style="text-align: left">상품 일반 정보</h5>
+                        </div>
+                        <table class="sizetable3">
+                            <tr>
+                                <td>제조자</td>
+                                <td>STYLE-J 제휴업체</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>제조국</td>
+                                <td>CHINA</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>품질보증</td>
+                                <td>소비자 분쟁 해결기준에 따름</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>A/S 책임자</td>
+                                <td>스타일제이 고객센터 1544-1234</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </dd>
+            <dt class="tab2">상품구매후기</dt>
+            <dd class="hidden dd1">
+                <div class="reviewwrite">
+                    <div class="reviewwrite11">
+                        <p style="text-align: left;"><b>REVIEW</b> | 악의적인 비방글은 무통보 삭제됩니다.</p>
+                        <textarea class="writing" style="resize: none"></textarea>
+                        <div class="inputname00">Name : <input type="text" class="inputname"></div>
+                        <div class="reviewsubmit">리뷰 등록하기</div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <hr class="reviewhr">
+                <br>
+                <table class="review-table aa1">
+                    <tr>
+                        <td rowspan="2" class="review-subject">몇년전부터 아이보리색같은 밝은톤의 울코트를 사고싶었는데 너무 비싸기도 하고 디자인이 마음에 드는게 없었는데, 이 코트 보는순간, 바로 이거다 싶었죠. 마침 생일쿠폰도 있어서 1도 고민없이 주문했는데 역시 선택하길 잘했어요. 어깨도 좁아보이고 소재가 얇으면 시간이 지날수록 후질근해지던데, 이건 소재도 적당해서 지금의 핏이 유지될거 같아요.</td>
+                        <td class="review-date">작성일: 2018/11/27</td>
+                    </tr>
+                    <tr>
+                        <td class="review-name">이름: 정성환</td>
+                    </tr>
+                </table>
+                <br>
+                <table class="review-table aa2">
+                    <tr>
+                        <td rowspan="2" class="review-subject"></td>
+                        <td class="review-date"></td>
+                    </tr>
+                    <tr>
+                        <td class="review-name"></td>
+                    </tr>
+                </table>
+                <br>
+                <table class="review-table aa3">
+                    <tr>
+                        <td rowspan="2" class="review-subject"></td>
+                        <td class="review-date"></td>
+                    </tr>
+                    <tr>
+                        <td class="review-name"></td>
+                    </tr>
+                </table>
+                <br>
+                <table class="review-table aa4">
+                    <tr>
+                        <td rowspan="2" class="review-subject"></td>
+                        <td class="review-date"></td>
+                    </tr>
+                    <tr>
+                        <td class="review-name"></td>
+                    </tr>
+                </table>
+                <br>
+                <table class="review-table aa5">
+                    <tr>
+                        <td rowspan="2" class="review-subject"></td>
+                        <td class="review-date"></td>
+                    </tr>
+                    <tr>
+                        <td class="review-name"></td>
+                    </tr>
+                </table>
+                <br>
+                <table class="review-table aa6">
+                    <tr>
+                        <td rowspan="2" class="review-subject"></td>
+                        <td class="review-date"></td>
+                    </tr>
+                    <tr>
+                        <td class="review-name"></td>
+                    </tr>
+                </table>
+            </dd>
+            <dt class="tab3">배송/교환/환불</dt>
+            <dd class="hidden dd2">
+                <div class="refund">
+                    <h4>Customer center : 1544-1234</h4>
+                    <br>
+                    <p>월-금 : 오전10시~오후5시 / 점심시간 : 오후12시~오후1시 / 토,일,공휴일은 휴무</p>
+                    <br>
+                    <br>
+                    <br>
+                    <h4>Delivery guide</h4>
+                    <br>
+                    <p>배송방법 : CJ대한통운 ( 1588-1255 )
+                        배송비용 : 총 결제금액이 70,000원 미만일 경우 2,500원이 추가됩니다.<br>
+                        총 결제금액이 70,000원 이상일 경우 무료배송이 이루어 집니다.<br>
+                        (단, 반품시 구매금액이 7만원 미만으로 되어질 경우 무료배송건은 취소되어 2,500원 부담되어지시니 참고해주세요.)<br>
+                        배송은 입금확인일로부터 3~5일 (주말, 공휴일 제외)정도 소요됩니다. [ 단, 주문 후 제작되는 제작상품,수제화의 경우 주말, 공휴일 제외하고 10~14일정도 소요됩니다. ]<br>
+                        배송예정일이 궁금하실 때에는 결제 및 입금완료일 익일 오후 3시 이후 문의주시면 담당직원의 안내를 받으실 수 있습니다.<br>
+                        [ 결제당일은 확인이 어려우니 양해 부탁드립니다. ]<br>
+                        [ 결제 후 취소시 1시 이전 취소요청해주셔야합니다. 그 후 요청하셔서 이미 발송된 경우 취소처리가 어렵습니다. ]<br><br>
+                        주문해주신 상품의 수량이 2개 이상일 경우 자동으로 묶음배송 되어집니다.<br>
+                        [ 따로 배송이 되는 걸 원치않는 고객님들도 계시기 때문에 선발송 부분은 저희 담당직원에게 문의 및 요청해주세요. ]<br>
+                        여러제품을 함께 주문하실 땐 배송일이 더 소요될 수 있으니 배송기간에 여유를 주시는 게 좋습니다.<br><br>
+                        ! 주문하실 때 품절이 아니더라도 재고수량과 공장사정에 따라 품절이 될 수 있으니 양해부탁드립니다.
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                    <h4>Return / Exchange</h4>
+                    <br>
+                    <p>스타일제이는 교환 및 반품이 가능합니다. (단, 1회에 한해서 가능합니다.)<br>
+                        하지만 착용으로 인한 상품 변형, 오염발생 (시착 시 화장품이 묻은 경우 처리 불가)<br>
+                        수선,세탁 하신 경우 상품의 가치 변형, 냄새, 고의로 상품을 훼손한 경우는 교환 및 반품이 불가합니다.<br>
+                        수제화와 제작상품 & 아이템과 악세사리는 교환 및 반품이 불가합니다.<br>
+                        교환 및 반품은 전자상거래법기준 7일이내 스타일제이측으로 제품이 도착해야 합니다.<br><br>
+                        교환 및 반품은 CJ대한통운 (1588-1255)을 이용해 보내주세요.<br>
+                        타택배 이용시 고객님께서 요금지불 해주셔야하며,<br>
+                        가까운 편의점 GS25, CU, 세븐일레븐, 바이더웨이 이용시에도<br>
+                        선불로 요금 지불하신 후 보내주셔야 합니다.<br>
+                        CJ대한통운이 아닌 타택배 이용시에는 고객님께서 요금지불하시고 보내주셔야 합니다.
+                    </p>
+                </div>
+            </dd>
+        </dl>
+    </div>
+    <footer style="clear:both">
+        <ul class="cscenter first">
+            <li>
+                <div>CS CENTER</div>
+            </li>
+            <li>
+                <h1 style="font-size: 25px;">1544-1234</h1>
+            </li>
+            <li>OPEN : AM 10:00 - PM 18:00</li>
+            <li>LUNCH : PM 12:00 - PM 13:00</li>
+            <li>SAT, RED DAY OFF</li>
+        </ul>
+        <ul class="moneyback first">
+            <li>반품안내</li>
+            <li>-반품주소-</li>
+            <li>경기도 광주시 경안로 29번길</li>
+            <li>CJ대한통운 (주)스타일제이</li>
+            <li>[CJ대한통운 : 1588-1255]</li>
+        </ul>
+        <ul class="community last">
+            <li>COMMUNITY</li>
+            <li><a href="#" title="준비중입니다.">공지사항</a></li>
+            <li><a href="#" title="준비중입니다.">이벤트</a></li>
+            <li><a href="#" title="준비중입니다.">상품리뷰</a></li>
+            <li><a href="#" title="준비중입니다.">상품문의</a></li>
+        </ul>
+        <ul class="guide last">
+            <li>GUIDE</li>
+            <li><a href="#" title="준비중입니다.">회사소개</a></li>
+            <li><a href="#" title="준비중입니다.">이용약관</a></li>
+            <li><a href="#" title="준비중입니다.">개인정보취급방침</a></li>
+            <li><a href="#" title="준비중입니다.">FAQ</a></li>
+        </ul>
+        <ul class="mypage last">
+            <li>MY PAGE</li>
+            <li><a href="#" title="준비중입니다.">배송조회</a></li>
+            <li><a href="#" title="준비중입니다.">해외배송</a></li>
+            <li><a href="#" title="준비중입니다.">회원정보변경</a></li>
+            <li><a href="#" title="준비중입니다.">비회원</a></li>
+        </ul>
+        <div class="companyinfo">
+            <p>상호 : (주)스타일제이 / 대표 : 정성환</p>
+            <p>사업자등록번호 : 110-81-12345 / 통신판매업신고 : 서울 동대문 1145호 / 주소 : 서울특별시 동대문구 무학로 172 (두산타워 1104호)</p>
+            <p>HOSTING by Ultimate creativity
+            </p>
+            <p>COPYRIGHT ＠ 2018 STYLEJ.CO.KR ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+
+    <!-----------------------------------------스크립트 섹션------------------->
+    <script>
+        //윈도우스크롤 이벤트
+        $(window).scroll(function(event) {
+            var scrollposition = $(window).scrollTop();
+            if (scrollposition > 300) {
+                $("header li h2").css("color", "#302014");
+                $("header li a").css("color", "#302014");
+                $("header").css("border-bottom", "none");
+                $("header li .manimg").attr("src", "images/man.png");
+                $("header li .cartimg").attr("src", "images/cart.png");
+                $("header").addClass("headerbackground");
+            } else {
+                $("header li h2").css("color", "#ababab");
+                $("header li a").css("color", "#ababab");
+                $("header").css("border-bottom", "1px solid #ababab");
+                $("header li .manimg").attr("src", "images/man2.png");
+                $("header li .cartimg").attr("src", "images/cart2.png");
+                $("header").removeClass();
+            }
+        });
+    </script>
+    <script>
+        ////포토 마우스 오버
+        $(function() {
+            $(".leftphoto img").mouseover(function() {
+                console.log("마우스오버작동");
+                var imgsave = $(this).attr("src");
+                $(".rightphoto img").attr("src", imgsave);
+            });
+        });
+
+        $(function() {
+            $(".leftphoto img").mouseover(function() {
+                $(this).css("opacity", 0.6);
+            });
+            $(".leftphoto img").mouseleave(function() {
+                $(this).css("opacity", 1.0);
+            });
+        });
+
+        ////캔슬
+        $(function() {
+
+
+            $(".cancel").click(function() {
+                $("#goods").text("");
+                $("#price").text("");
+                $("#cancel").css("display", "none");
+            });
+        });
+
+        ///구매하기, 장바구니, 위시리스트 눌렀을 때
+        $(".purchase div:first-child").click(function() {
+            alert("현재 상품 입고 중입니다.");
+        });
+        $(".purchase div:nth-child(2), .purchase div:nth-child(3)").click(function() {
+            alert("회원에게만 제공되는 기능입니다.");
+        });
+
+        //탭속성
+        var $tab = $('dt'); // 탭메뉴를 변수에 지정
+        $tab.click(function() { // 탭메뉴 클릭 이벤트
+            $('dd').addClass('hidden'); //모든 dd를 안보이게함
+            $('dt').css('background', 'white');
+            $('dt').css('color', '#302014');
+            $(this).next().removeClass('hidden'); //보이게함
+            $(this).css('background', '#302014');
+            $(this).css('color', 'white');
+        });
+        
+        //탭 푸터 조정
+        $(function(){
+            $(".tab1").click(function(){
+                $("footer").css("margin-top","10700px");  
+            });
+             $(".tab2").click(function(){
+                $("footer").css("margin-top","1000px");  
+            });
+             $(".tab3").click(function(){
+                $("footer").css("margin-top","950px");  
+            });
+        });
+
+    </script>
+    <script>
+        ///리뷰등록//
+        var click = 1;
+        $(function() {
+            $(".reviewsubmit").click(function() {
+                var subject = $(".writing").val();
+                console.log(subject);
+                var inputname = $(".inputname").val();
+                var date = new Date();
+                var inputdate = date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + date.getDate();
+
+                if (subject.length < 10) {
+                    alert("리뷰는 10자 이상으로 써주세요.");
+                } else {
+                    console.log(inputname);
+                    console.log(inputdate);
+                    console.log(subject);
+                    click++;
+                    $(".dd1 .aa" + click + " .review-subject").text(subject).innerHTML;
+                    $(".dd1 .aa" + click + " .review-date").text("작성일: " + inputdate).innerHTML;
+                    $(".dd1 .aa" + click + " .review-name").text("이름: " + inputname).innerHTML;
+                    $(".writing").val("");
+                    $(".inputname").val("");
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>

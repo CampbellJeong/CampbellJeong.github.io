@@ -1,0 +1,359 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Delphi hotel main page</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style-index.css">
+    <link href="css/style-chat.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/script-chat.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+
+    <!--<script src="//code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>-->
+    <!--데이트피커-->
+    <link href="css/datepicker.min.css" rel="stylesheet" type="text/css">
+    <script src="js/datepicker.js"></script>
+    <script src="js/datepicker.en.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.slider').bxSlider();
+        });
+                $(function() {
+                    $("#menubar").hide();
+                    $(".menu li a").on("mouseover", function() {
+                        $("#menubar").slideDown(300);
+                    });
+                    $(".menu li a").on("mouseleave", function() {
+                        $(this).css("background", "none")
+
+                    });
+                    $("#menubar").on("mouseleave", function() {
+                        $("#menubar").slideUp(500);
+                    });
+                    $("#menubar li a").on("mouseover", function() {
+                        $(this).css("background", "lightgrey")
+                    });
+                    $("#menubar li a").on("mouseleave", function() {
+                        $(this).css("background", "none")
+                    });
+                });
+
+
+        $(function() {
+            $(".jap").hide();
+            $(".kor a").on("click", function() {
+                $(".login2").css("background-color", "black");
+                $(".login2 li a").css("color", "white");
+                   $(".login2 li a").css("font-weight", "600");
+                $(".jap").slideDown(300);
+            });
+             $(".login").on("mouseover", function() {
+                $("#menubar").slideUp(300);
+            });
+            
+            
+            
+            $(".header2").on("mouseleave", function() {
+
+                $(".login2").css("background", "none");
+                $(".login2 li a").css("color", "#302014");
+                $(".jap").slideUp(10);
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="msg_box" style="right:0px">
+        <div class="msg_head">To Manager
+            <div class="close">x</div>
+        </div>
+        <div class="msg_wrap">
+            <div class="msg_body">
+                <div class="msg_a">Hi. Delphi hotel is one of the top business hotels in korea. What can I do help for you?</div>
+                <div class="msg_push"></div>
+            </div>
+            <div class="msg_footer"><textarea class="msg_input" rows="4"></textarea></div>
+        </div>
+    </div>
+    <div class="maindiv">
+        <header class="header0">
+            <div class="header1">
+                <a href="index-english.html"><img src="images/logo.png"></a>
+            </div>
+            <div class="header2">
+                <section class="login">
+                    <ul class="login1">
+                        <li class="loginbutton"><a onclick="loginPopupOpen()">Login</a> | <a onclick="loginPopupOpen()" style="cursor: pointer">Reserv.</a></li>
+                    </ul>
+                    <div class="login2">
+                        <img src="images/earth.png">
+                        <select class="lang" onchange="location = this.options[this.selectedIndex].value;">
+                            <option value="index.html">한국어</option>
+                            <option value="index-english.html" selected>English</option>
+                            <option value="index-japanese.html">日本語</option>
+                            <option value="index-chinese.html">中文</option>
+                        </select>
+                    </div>
+                </section>
+
+                <section class="menu">
+                    <ul>
+                        <li><a href="">Intro.</a></li>
+                        <li><a href="">Rooms</a></li>
+                        <li><a href="">Location</a></li>
+                        <li><a href="">Nearby</a></li>
+                    </ul>
+                </section>
+            </div>
+        </header>
+    </div>
+    <div id="wrap0">
+        <div id="menubar">
+
+            <div>
+                <ul>
+                    <li><a href="sub00.html">Intro.</a></li>
+                    <li><a href="sub00.html">Reservation</a></li>
+                    <li><a href="sub00.html">Recruit</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="sub01-01.html">Standard</a></li>
+                    <li><a href="sub01-02.html">Delux</a></li>
+                    <li><a href="sub01-03.html">Suite</a></li>
+                    <li><a href="sub01-04.html">President</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="sub02.html">Location</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="sub02.html">Nearby</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="wrap">
+
+        <div id="mainphoto">
+            <div class="slider">
+                <div><img src="images/main1.jpeg" width="1200px" height="640px" title="Delphihotel pool"></div>
+                <div><img src="images/main2.jpeg" width="1200px" height="640px" title="델파이호텔 2"></div>
+                <div><img src="images/main3.jpg" width="1200px" height="640px" title="델파이호텔 3"></div>
+            </div>
+
+            <div class="reservebar">
+                <ul>
+                    <li><input type="text" data-language="en" class="datepicker-here bar-checkin" value="Check-in">&nbsp;<img src="images/calendar.png"></li>
+                    <li class="discipline">|</li>
+                    <li><input type="text" data-language="en" class="datepicker-here bar-checkout" value="Check-out">&nbsp;<img src="images/calendar.png"></li>
+                    <li class="discipline">|</li>
+                    <li>
+                        <select value="성인 2명" class="optionbox bar-adult">
+                            <option>Adult 1</option>
+                            <option selected>Adult 2</option>
+                            <option>Adult 3</option>
+                        </select></li>
+                    <li class="discipline">|</li>
+                    <li><select value="어린이 0명" class="optionbox bar-child">
+                            <option>No kid</option>
+                            <option>Kid 1</option>
+                            <option>Kid 2</option>
+                        </select></li>
+                    <li class="discipline">|</li>
+                    <li>
+                        <select value="유아 0명" class="optionbox bar-infant">
+                            <option>No infant</option>
+                            <option>Infant 1</option>
+                            <option>Infant 2</option>
+                        </select>
+                    </li>
+                    <li><a href=""><img src="images/info.png" id="info" title='The standard of infant is below age of 6.'></a></li>
+                    <li><a>
+                            <div class="search bar-reserve">Reservation</div>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section id="event">
+            <center>
+                <section id="event1">
+                    <h1>Event</h1><br>
+                    <hr width="200" size="100" color="#896b38"><br>
+                    <h2 style="color: #896b38">S P E C I A L &nbsp; O F F E R S</h2>
+                </section>
+            </center>
+            <section id="event2"><a href="">more <bold>+</bold></a>
+            </section>
+        </section>
+        <section id="eventphoto">
+            <section id="eventphoto1"><a href="#eventphoto1" title="페이지 준비중입니다."><img src="images/event1.jpg" width="380px" height="360px"></a></section>
+            <section id="eventphoto2"><a href="#eventphoto2" title="페이지 준비중입니다."><img src="images/event2.jpg" width="380px" height="360px"></a></section>
+            <section id="eventphoto3"><a href="#eventphoto3" title="페이지 준비중입니다."><img src="images/event3.jpg" width="380px" height="360px"></a></section>
+        </section>
+        <br><br><br><br><br>
+        <section id="surroundings">
+            <center>
+                <section id="surroundings1">
+                    <h1>Nearby</h1><br>
+                    <hr width="200" size="100" color="#896b38"><br>
+                    <h2 style="color: #896b38">S U R R O U N D I N G S &nbsp;</h2>
+                </section>
+            </center>
+            <section id="event2"><a href="">more <bold>+</bold></a>
+            </section>
+            <br><br>
+        </section>
+        <section id="surroundingsphoto">
+            <section id="surroundingsphoto-section1" style="width:800px">
+                <section id="surroundingsphoto-section1-1">
+                    <a href="https://www.google.co.kr/search?q=%EC%98%A4%EB%8B%A4%EC%9D%B4%EB%B0%94&newwindow=1&hl=ko&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj7ity8_d3eAhWCEbwKHZxcAIAQ_AUIDygC#imgrc=_" target="_blank">
+                        <img src="images/5.jpeg" id="surroundingsphoto1" style="width:800px;height: 360px">
+
+                        <div id="surdiv">
+                            <h6>Odaiba</h6>
+                        </div>
+
+                    </a></section>
+                <!--1번째 사진-->
+                <span id="surroundingsphoto-section1-2">
+                    <span id="span1"><a href="https://www.google.co.kr/search?newwindow=1&hl=ko&tbm=isch&sa=1&ei=GGDxW_PcH9Dq8AXhopy4Ag&q=%EA%B8%B0%EC%98%A8%EA%B1%B0%EB%A6%AC&oq=%EA%B8%B0%EC%98%A8%EA%B1%B0%EB%A6%AC&gs_l=img.3..0l2j0i24l7j0i5i30.716595.717539..717728...0.0..0.132.1130.7j4......1....1..gws-wiz-img.d51UsbVrHC8" target="_blank"><img src="images/6.jpg" id="surroundingsphoto2" style="width:390px;height: 263px">
+                            <div id="surdiv">
+                                <h6>Gion st.</h6>
+                            </div>
+
+                        </a></span>
+                    <!--2번째 사진-->
+                    <span id="span2"><a href="https://www.google.co.kr/search?newwindow=1&hl=ko&tbm=isch&sa=1&ei=62LxW_qxBZLy8AWsr5fgDg&q=%EC%95%84%EC%82%AC%EC%BF%A0%EC%82%AC&oq=%EC%95%84%EC%82%AC%EC%BF%A0%EC%82%AC&gs_l=img.3..0l10.19152.19828..20022...0.0..0.116.1094.8j3......1....1..gws-wiz-img.nZIJ-a9KvL8" target="_blank"><img src="images/3.jpg" id="surroundingsphoto3" style="width:390px;height: 263px">
+                            <div id="surdiv">
+                                <h6>Asakusa</h6>
+                            </div>
+
+                        </a></span>
+                    <!--3번째 사진-->
+                </span>
+            </section>
+            <section id="surroundingsphoto-section2" style="width:385px">
+                <a href="https://www.google.co.kr/search?newwindow=1&hl=ko&tbm=isch&sa=1&ei=_2LxW6OnOIOA8gXMo5SQAQ&q=%EB%8F%84%EC%BF%84%ED%83%80%EC%9B%8C&oq=%EB%8F%84%EC%BF%84%ED%83%80%EC%9B%8C&gs_l=img.3..0l10.14510.15277..15513...0.0..0.134.1215.8j4......1....1..gws-wiz-img.AnAdkbt80BE" target="_blank"><img src="images/2.jpg" id="surroundingsphoto4" style="width:385px;height: 265px">
+                    <div id="surdiv">
+                        <h6>Tokyo tower</h6>
+                    </div>
+                </a>
+                <a href="https://www.google.co.kr/search?newwindow=1&hl=ko&tbm=isch&sa=1&ei=EGPxW-z1FomU8wW_3p_gBQ&q=%ED%85%90%EC%A7%84+%EC%8B%A0%EC%82%AC&oq=%ED%85%90%EC%A7%84+%EC%8B%A0%EC%82%AC&gs_l=img.3...24462.25818..26058...0.0..0.109.1318.7j6......1....1..gws-wiz-img.......0j0i24.eC97x_fTWeo" target="_blank"><img src="images/7.jpg" id="surroundingsphoto5" style="width:385px;height: 358px">
+                    <div id="surdiv">
+                        <h6>Tenjin temple</h6>
+                    </div>
+                </a>
+            </section>
+        </section>
+        <br><br><br><br><br>
+        <center>
+            <section id="map">
+                <h1>Location</h1><br>
+                <hr width="200" size="100" color="#896b38"><br>
+                <h2 style="color: #896b38">M A P</h2>
+
+            </section>
+        </center>
+        <br><br>
+        <div id="iframediv">
+            <section id="iframe">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.627914557295!2d135.49922991469518!3d34.66409868044396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e76b8845eae3%3A0x47e6c4e1571ac13d!2sSwiss%C3%B4tel+Nankai%2C+Osaka!5e0!3m2!1sko!2skr!4v1540304236096" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+            </section>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="maindiv">
+        <footer class="footer0">
+            <section>
+                <span id="footer1">
+                    <h2>Delphi hotel</h2>
+                </span>
+                <span id="footer2">
+                    <pre>서울특별시 역삼동 경충길 210 (우:04389)   TEL 02-4423-5522   사업자등록번호 201-73-55892</pre></span>
+                <span id="footer3">
+                    <a href="index-english.html">ENGLISH</a>
+                    <a href="index-japanese.html">日本語</a>
+                    <a href="index-chinese.html">中文</a>
+                </span>
+            </section>
+        </footer>
+    </div>
+
+
+
+    <!---------------------스크립트 라인---------------->
+
+    <script>
+        //예약하기 버튼 눌렀을 때
+        $(function() {
+            $(".bar-reserve").click(function() {
+                var checkin = $(".bar-checkin").val();
+                var checkout = $(".bar-checkout").val();
+                var adult = $(".bar-adult").val();
+                var child = $(".bar-child").val();
+                var infant = $(".bar-infant").val();
+
+                checkinyear = checkin.substr(0, 4);
+                checkinmonth = checkin.substr(5, 2);
+                checkindate = checkin.substr(8, 2);
+                var checkinnumber = checkinyear + checkinmonth + checkindate;
+                checkinnumber = Number(checkinnumber);
+
+                checkoutyear = checkout.substr(0, 4);
+                checkoutmonth = checkout.substr(5, 2);
+                checkoutdate = checkout.substr(8, 2);
+                var checkoutnumber = checkoutyear + checkoutmonth + checkoutdate;
+                checkoutnumber = Number(checkoutnumber);
+                duration = checkoutnumber - checkinnumber;
+
+                if (checkin == "Check-in" || checkout == "Check-out") {
+                    alert("Set check-in & check-out date");
+                } else if (checkinnumber >= checkoutnumber) {
+                    alert("Checkout date should be beyond checkin date");
+
+                } else {
+                    alert("Not available room on the period of "+checkin + " ~ " + checkout);
+
+                }
+
+            });
+        });
+
+        //로그인 팝업창
+        function loginPopupOpen() {
+
+            var popUrl = "index-login-en.html"; //팝업창에 출력될 페이지 URL
+
+            var popupX = (window.screen.width / 2) - (400 / 2);
+            // 만들 팝업창 좌우 크기의 1/2 만큼 보정값 뺌
+            var popupY = (window.screen.height / 2) - (400 / 2);
+            // 만들 팝업창 상하 크기의 1/2 만큼 보정값으로 빼주었음
+            var popOption = "width=420, height=420, resizable=no, scrollbars=no, status=no, left=" + popupX + ", right=" + popupY + ", screenX=" + popupX + ", screenY=" + popupY;
+
+            window.open(popUrl, "", popOption);
+        }
+        //////
+
+    </script>
+
+
+</body>
+
+
+</html>

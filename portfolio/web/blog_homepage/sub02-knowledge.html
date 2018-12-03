@@ -1,0 +1,407 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style-sub02.css">
+
+    <title>정성환 블로그</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/blog_homepage.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="container_mini">
+                <!--메뉴와 로고를 감싸준다-->
+                <a href="index.html" class="headA">Home</a>
+                <button type="button" class="headC">
+                    <span class="menu_toggle"></span>
+                </button>
+            </div>
+            <nav class="headB">
+                <ul>
+                    <li><a href="sub01-profil.html">프로필</a></li>
+                    <li><a href="sub02-knowledge.html">지식 공유</a></li>
+                    <li><a href="sub02-mind.html">생각 공유</a></li>
+                    <li><a href="#">방명록</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="secA">
+        <div class="container">
+            <img src="images/logo-engineering.png" class="logo-engineering">
+        </div>
+    </section>
+    <div class="caetgoryReactive">
+        <h3 style="color: #302014">카테고리</h3>
+        <button type="button" class="headD">
+            <span class="menu_toggle"></span>
+        </button>
+    </div>
+    <nav class="headD-menu">
+        <ul>
+            <br>
+            <li><a href="sub01-profil.html">프로필</a></li>
+            <hr>
+            <li class="opencategory"><b>지식 공유</b></li>
+            <ul>
+                <li><a href="sub02-knowledge.html"><b>└ 화학공학</b></a></li>
+                <li>└ 환경공학</li>
+                <li>└ 공정설계</li>
+            </ul>
+            <hr>
+            <li class="opencategory">생각 공유</li>
+            <ul style="display: none;">
+                <li><a href="sub02-mind.html">└ 여행</a></li>
+                <li>└ 독서</li>
+                <li>└ 좋은글</li>
+            </ul>
+            <hr>
+            <li>방명록</li>
+        </ul>
+    </nav>
+    <section class="secB">
+        <div class="secB-0">
+            <div class="secB-1" style="width: 100px;">
+                <div id="leftmenu">
+                    <h3 style="color: #797979">카테고리</h3>
+                    <ul class="leftmenu22">
+                        <br>
+                        <li><a href="sub01-profil.html">프로필</a></li>
+                        <hr>
+                        <li class="opencategory"><b>지식 공유</b></li>
+                        <ul>
+                            <li><a href="sub02-knowledge.html"><b>└ 화학공학</b></a></li>
+                            <li>└ 환경공학</li>
+                            <li>└ 공정설계</li>
+                        </ul>
+                        <hr>
+                        <li class="opencategory">생각 공유</li>
+                        <ul style="display: none;">
+                            <li><a href="sub02-mind.html">└ 여행</a></li>
+                            <li>└ 독서</li>
+                            <li>└ 좋은글</li>
+                        </ul>
+                        <hr>
+                        <li>방명록</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="secB-2">
+                <div class="secB-2-1">
+                    <p><span class="category01">지식공유</span> - <span class="category02">화학공학</span>,&nbsp;&nbsp; <span class="category02-pagenumber">5</span>개의 글</p>
+                    <br>
+                    <div class="table01">
+                        <table>
+                            <tr>
+                                <td><b>글제목</b></td>
+                                <td><b>조회수</b></td>
+                                <td><b>작성일</b></td>
+                            </tr>
+                            <tr>
+                                <td class="list-01" style="font-weight: bold">분리공정 기본 및 종류</td>
+                                <td>16</td>
+                                <td class="topdate">2018.11.29</td>
+                            </tr>
+                            <tr>
+                                <td class="list-02">에폭시 원료, ECH와 비스페놀A</td>
+                                <td>24</td>
+                                <td class="topdate">2018.11.22</td>
+                            </tr>
+                            <tr>
+                                <td class="list-03">비말동반</td>
+                                <td>53</td>
+                                <td class="topdate">2018.10.30</td>
+                            </tr>
+                            <tr>
+                                <td class="list-04">석유의 성질</td>
+                                <td>56</td>
+                                <td class="topdate">2018.10.24</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="table02 hidden">
+                        <table>
+                            <tr>
+                                <td><b>글제목</b></td>
+                                <td><b>조회수</b></td>
+                                <td><b>작성일</b></td>
+                            </tr>
+                            <tr>
+                                <td class="list-05">Water & Gas injection</td>
+                                <td>78</td>
+                                <td class="topdate">2018.10.11</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="toppagenumber00">
+                        <div class="toppagenumber page1">1</div>
+                        <div class="toppagenumber page2">2</div>
+                    </div>
+                </div>
+
+
+                <!-----------------글쓰는 부분------------------------------------>
+                <div class="secB-2-2">
+                    <div class="word01">
+                        <table>
+                            <tr>
+                                <td><span>분리공정 기본 및 종류</span>&nbsp;&nbsp; | &nbsp;&nbsp;<span class="category01">지식공유</span> - <span class="category02">화학공학</span></td>
+                                <td><span><span class="date">2018.11.29</span> 05:34</span></td>
+                            </tr>
+                        </table>
+                        <div class="wordpage">
+                            <pre>
+<h3>분리공정 기본 및 종류</h3>
+
+대부분의 화학공정의 원료는 기체, 액체, 고체 상의 여러 성분들의 혼합물로 존재한다.
+
+그 원료 혼합물로부터 다른 성분을 분리 또는 제거하고자 할 때 혼합물의 상과 다른 상이 접촉하게 되는 경우가 있다.
+
+두 개의 서로 다른 상이 접촉하여 용질이 다른 상으로 확산하는 경우도 있다.
+
+즉, 적절한 조건을 줌으로써 성분들이 어느 한쪽 상으로 더 이동하게 되어 성분들이 분리된다.
+
+분리법의 종류는 아래와 같다.
+
+
+<h3>증류</h3>
+액체 시료 속의  불순물을 분리해내는 방법으로, 상압증유, 감압증류 수증기 증류 등이 있다.
+
+시료의 끓는 점이 높은 경우에는 감압하거나 수증기와 함께 증류하기도 한다.
+
+<img src="images/distillation.png">
+
+
+<h3>추출</h3>
+액체 용매를 사용해서 고체 또는 액체 속에 있는 어떤 물질을 분리하여 뽑아내는 조작을 말한다.
+
+산, 염기를 이용해서 화학변화를 일으키는 경우와 단순히 용해시켜 추출하는 경우가 있으며, 액체로부터의 추출에는 분별 깔대기를, 고체로부터의 추출에는 속슬레추출기를 이용한다.
+
+
+<h3>재결정</h3>
+고체상태의 혼합물을 분리하는 방법이다. 일반적으로 물질의 용해도에는 여러가지의 특성이 있는데 예를 들어 설탕과 소금의 혼합물 정제에는 알코올을 사용한 재결정법을 이용한다.
+
+<img src="images/recrystalyze.png">
+
+
+<h3>원심분리</h3>
+단백질이나 생체물질의 분리에 이용하는 방법으로 분자량의 차이를 이용해서 초원심분리기로 분리한다.
+
+
+<h3>크로마토그래피</h3>
+적당한 흡착제가 들어 있는 관 속에 분리, 정제할 시료를 부으면 흡착제와 시료의 친화력 차이 때문에 시료의 각 성분이 관 속의 다른 장소에 분배되는 것을 이용한 분리수단이다. 대표적으로 가스크로마토그래피가 있다.
+
+
+<h3>막공정</h3>
+막을 이용한 분자 분리 공정이다. 상당히 가는 막이 두 상 사이의 분자운동 속도를 조절한다.
+                   </pre>
+                        </div>
+                    </div>
+                    <div class="word02 hidden">
+                        <table>
+                            <tr>
+                                <td><span>에폭시 원료, ECH와 비스페놀A</span>&nbsp;&nbsp; | &nbsp;&nbsp;<span class="category01">지식공유</span> - <span class="category02">화학공학</span></td>
+                                <td><span><span span class="date">2018.11.29</span> 11:21</span></td>
+                            </tr>
+                        </table>
+                        <div class="wordpage">
+                            <pre>
+에폭시의 원료 ECH(epichlorohydrin)와 Bisphenol A (이하 BPA)에 대해서 알아보겠다.
+
+에폭시는 국내에는 국도화학과 금호피앤비케미칼 등에서 생산하고 있다.
+
+직접법 또는 간접법을 사용하여 ECH, BPA와 촉매 NaOH의 촉매 반응으로 만들어 지며 반응 식은 아래와 같다.
+
+BPA+2ECH+2NaOH -> Epoxy resin + 2NaCl + 2H2O
+
+
+ECH/BPA 몰비에 따라 에폭시의 분자량은 바뀌게 된다. 그리고 과도한 중합반응을 방지하기위해 ECH를 과량으로 넣어주는 것이 일반적이다.
+
+중합반응이라함은 간단히 분자들이 연쇄적으로 연결되어 고분자화 하는 것이다.
+
+아래의 성질은 일반적으로 에폭시 제조 공정에서 쓰이는 ECH와 BPA의 일반적인 성질을 나타내므로 순도에 따라 성질이 조금씩 다를 수 있다.
+
+
+<h3>ECH의 성질</h3>
+
+화학식: C3H5ClO
+
+끓는점: 117C
+
+비중: 1.18
+
+분자량: 92.53g/mol
+
+<img src="images/epoxy1.jpg">
+
+
+<h3>BPA(비스페놀A)의 성질</h3>
+
+화학식: (CH3)2C(C6H4OH)2
+
+끓는점: 220C
+
+밀도: 1.054kg/m3
+
+분자량: 228.3g/mol
+
+<img src="images/bpa1.png">
+
+제법: 2개의 페놀과  1개의 아세톤을 반응시켜 생성한다.
+                   </pre>
+                        </div>
+                    </div>
+                    <div class="word03 hidden">
+                        <table>
+                            <tr>
+                                <td><span>비말동반</span>&nbsp;&nbsp; | &nbsp;&nbsp;<span class="category01">지식공유</span> - <span class="category02">화학공학</span></td>
+                                <td><span><span span class="date">2018.11.29</span> 12:24</span></td>
+                            </tr>
+                        </table>
+                        <div class="wordpage">
+                            <pre>
+<h3>비말 동반 (Entrainment)</h3>
+
+1. 액체 방울의 일부가 가스 또는 증기에 비산하여 증발관 밖으로 배출되는 현상이다.
+
+2. 갑작스런 비등으로 액이 심하게 튀어 오르거나 거품에 의해 주로 발생한다.
+
+3. 증발관 내부 부식의 원인이 된다.
+
+<img src="images/entrainment.png">
+
+
+<h3>방지법</h3>
+
+1. 침강법
+
+증발관 상부에 큰 공간을 만들어 증기의 상승속도를 낮추어 비말을 침강시킨다.
+
+
+2. 분리법
+
+증기의 유로에 방해판을 설치하여 급격한 방향 변환으로 인해 비말을 분리시킨다.
+
+
+3. 원심 분리법
+
+증기에 회전운동을 주어 원심력을 이용하여 비말을 분리시킨다.
+                   </pre>
+                        </div>
+                    </div>
+                    <div class="word04 hidden">
+                        <table>
+                            <tr>
+                                <td><span>석유의 성질</span>&nbsp;&nbsp; | &nbsp;&nbsp;<span class="category01">지식공유</span> - <span class="category02">화학공학</span></td>
+                                <td><span><span class="date">2018.11.29</span> 15:20</span></td>
+                            </tr>
+                        </table>
+                        <div class="wordpage">
+                            <pre>
+석유는 API에 따라 그 성질이 달라진다.
+보통 Heavy oil은 API 20아래를 칭한다.
+
+API는 141.5/비중-131.5로 계산되며 API가 커질수록 Medium oil, Light oil로 분류된다.
+
+<img src="images/oil1.png">
+
+그리고 이 원유의 성질은 나라, 지역별로 다 다르다.
+
+이 외에도 수백가지의 Case가 있다. Hysys에도 내장되어 있으니 라이센스가 있으면 참고하기 바란다.
+
+<img src="images/oil2.png">
+
+대표적인 것은 우리가 잘하는 텍사스유와 두바이유 정도가 있겠다.
+                   </pre>
+                        </div>
+                    </div>
+                    <div class="word05 hidden">
+                        <table>
+                            <tr>
+                                <td><span>Water & Gas injection</span>&nbsp;&nbsp; | &nbsp;&nbsp;<span class="category01">지식공유</span> - <span class="category02">화학공학</span></td>
+                                <td><span><span span class="date">2018.11.29</span> 12:20</span></td>
+                            </tr>
+                        </table>
+                        <div class="wordpage">
+                            <pre>
+원유를 시추하는데에 있어서 중요한 작업인 Water와 Gas Injection에 대해서 설명을 간단히 해보겠다.
+
+Oil well과는 별도로 Water 또는 Gas injection well을 따로 설치하는데 목적은 Oil 회수율을 높이고 Reservoir의 압력을 높히는데 사용된다.
+
+<img src="images/gas1.png">
+
+이러한 방법은 2차채유라고 하며 보통 1차채유로는 30%정도의 원유밖에 뽑지 못하기 때문에 2차 채유를 실시하게 된다.
+
+Water injection은 한글로 펌프채유라고 하며 Reservoir에 물을 주입시킴으로써 원유를 위로 뜨게 만들어 원유를 더욱 쉽게 채취할 수 있게 해준다.
+
+기름의 비중이 물보다 작으므로 기름이 물에 뜨게 된다.
+
+채유 시 원유와 물이 섞여 나오는데 이는 원유와 물로 정제하여 그 물을 다시 Water injection으로 사용한다.
+
+주변에 바다가 접해있으면 바닷물(Sea water)을 사용하며, 강이 있을시 강물을 사용하는데 강물은 여과와 biociding의 작업을 거친 뒤 사용해야 한다.
+
+<img src="images/gas2.jpg">
+
+Gas Injection은 한글로는 가스압입법이라고도 하는데 비중이 높은 Immiscible(혼합되지 않는) CO2를 사용하게 되는데, 이는 Gas를 위로 뜨게 만들어 물과 마찬가지로 효율을 높여준다.
+
+<img src="images/gas3.png">
+
+이외에 액화석유가스 등을 유층에 압입하여 원유와 용해상태를 만들어 유동을 쉽게 하여 원유 채취율을 향상시키는 방법인 화공법도 있다.
+                   </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footA">
+                <h2>Engineering world</h2>
+                <p>
+                    <a href="http://jsh2020.dothome.co.kr">jsh2020.dothome.co.kr</a>
+                </p>
+            </div>
+            <div class="footB">
+                <div>
+                    <h3>ABOUT</h3>
+                    <ul>
+                        <li><a href="#">설립</a></li>
+                        <li><a href="#">주소</a></li>
+                        <li><a href="#">지도</a></li>
+                        <li><a href="#">스태프</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>SUPPORT</h3>
+                    <ul>
+                        <li><a href="#">다운로드</a></li>
+                        <li><a href="#">매뉴얼</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">문의</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CONTENTS</h3>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">비즈니스</a></li>
+                        <li><a href="#">프로필</a></li>
+                        <li><a href="#">개발자</a></li>
+                        <li><a href="#">블로그</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footC">
+                <p>Engineering world, 2018 ALL rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

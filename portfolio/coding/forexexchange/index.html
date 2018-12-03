@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>AJAX</title>
+    <link rel="stylesheet" type="text/css" href="css/style-index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/forexexchange.js"></script>
+</head>
+<body>
+    <div class="ps">환율이 안보이면 새로고침(F5) 해주세요.</div>
+    <div class="wrap">
+        <h3>환율우대율 계산기</h3>
+        <div class="wrap2">
+            <p>업데이트 시간: <span id="updatedtime"></span></p>
+            <div class="noDeduction">
+                <p>환율우대율 미적용</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>통화명</th>
+                            <th>매매기준율</th>
+                            <th class="buycss">살때</th>
+                            <th>팔때</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="usd" id="usd">
+                            <td><img src="images/united-states.png"> 미국 달러</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="jpy">
+                            <td><img src="images/japan.png"> 일본 엔</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="eur">
+                            <td><img src="images/european-union.png"> 유로화</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="cny">
+                            <td><img src="images/china.png"> 중국 위안</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="aud">
+                            <td><img src="images/australia.png"> 호주 달러</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="cad">
+                            <td><img src="images/canada.png"> 캐나다 달러</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="gbp">
+                            <td><img src="images/united-kingdom.png"> 영국 파운드</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="thb">
+                            <td><img src="images/thailand.png"> 태국 바트</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="php">
+                            <td><img src="images/philippines.png"> 필리핀 페소</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="twd">
+                            <td><img src="images/taiwan.png"> 대만 달러</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="deduction">
+                <p>환율우대율 적용 <select id="d-apply">
+                        <option value="1">100%</option>
+                        <option value="0.9" selected>90%</option>
+                        <option value="0.8">80%</option>
+                        <option value="0.7">70%</option>
+                        <option value="0.6">60%</option>
+                        <option value="0.5">50%</option>
+                        <option value="0.4">40%</option>
+                        <option value="0.3">30%</option>
+                    </select></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>통화명</th>
+                            <th>매매기준율</th>
+                            <th class="buycss">살때</th>
+                            <th>팔때</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="usd2">
+                            <td><img src="images/united-states.png"> 미국 달러</td>
+                            <td>1232.23</td>
+                            <td>1232.23</td>
+                            <td>1232.23</td>
+                        </tr>
+                        <tr id="jpy2">
+                            <td><img src="images/japan.png"> 일본 엔</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="eur2">
+                            <td><img src="images/european-union.png"> 유로화</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="cny2">
+                            <td><img src="images/china.png"> 중국 위안</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="aud2">
+                            <td><img src="images/australia.png"> 호주 달러</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="cad2">
+                            <td><img src="images/canada.png"> 캐나다 달러</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="gbp2">
+                            <td><img src="images/united-kingdom.png"> 영국 파운드</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="thb2">
+                            <td><img src="images/thailand.png"> 태국 바트</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="php2">
+                            <td><img src="images/philippines.png"> 필리핀 페소</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr id="twd2">
+                            <td><img src="images/taiwan.png"> 대만 달러</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <p>2018, Created by Jung Sung Hwan</p>
+        </footer>
+    </div>
+</body>
+
+</html>

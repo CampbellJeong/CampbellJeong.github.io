@@ -1,0 +1,147 @@
+* {
+    margin: 1;
+    padding: 0;
+}
+
+@media all and (max-width:767px) {
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /*위로간 글자를 중앙으로 맞춰준다.*/
+    }
+
+    header nav {
+
+        display: none;
+        width: 100%;
+    }
+
+
+
+    header nav ul li {
+
+        line-height: 29px;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #e5e9fa;
+    }
+
+    .mainword a {
+        text-decoration: none;
+        color: #0a1c67;
+    }
+
+
+
+
+    header nav {
+        background-image: url("../images/logo2.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+        background-size: 30%;
+        background-image: rgba(255, 255, 255, 0.2);
+
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        padding-left: 17px;
+        color: #3d3d3d;
+        font-weight: bold;
+
+    }
+
+    header nav li:hover {
+        background-color: azure;
+    }
+
+
+
+    header .nav-icon {
+        width: 14%;
+        cursor: pointer;
+    }
+
+    header .logo {
+        width: 18%
+    }
+
+    /*메인사진*/
+    .photosection {
+        position: relative;
+
+
+    }
+
+    .slider {
+        position: relative;
+
+    }
+
+    .sliderword {
+        position: absolute;
+        font-weight: bold;
+        z-index: 99;
+        top: 81%;
+        background-color: rgba(0, 0, 0, 0.2);
+        color: floralwhite;
+        width: 100%;
+        line-height: 10px;
+    }
+
+    .sliderword p {
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+
+
+    .wedding-main {
+        height: 45vh;
+    }
+
+    /*미들메뉴*/
+    .middle-menu ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+
+    }
+
+    .middle-menu ul li img {
+        width: 98%;
+        border-radius: 3px;
+    }
+
+    .middle-menu ul li:nth-child(3) {
+        opacity: 0.4;
+    }
+
+
+    .word {
+        text-align: center;
+        margin: 20px;
+    }
+
+
+    footer {
+        background-color: #b4b4b4;
+    }
+
+    footer div {
+        padding: 5px;
+        line-height: 0.9em;
+        text-align: center;
+        color: #fcfcfc;
+    }
+
+
+
+
+
+
+}

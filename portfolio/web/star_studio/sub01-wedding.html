@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/sub01-wedding.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bxslider.css">
+    <script src="js/bxslider.js"></script>
+
+    <script>
+        $(function() {
+            $(".nav-icon").on("click", function() {
+                $("header nav").stop().slideToggle("fast");
+                /* $("header nav ul li a").css("opacity","1.0");*/
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.slider').bxSlider();
+        });
+    </script>
+
+    <title>스타 스튜디오</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="images/nav-icon.png" class="nav-icon">
+            <h1 class="mainword"><a href="index-original.html">STAR STUDIO</a></h1>
+            <img src="images/logo.png" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="sub00-about.html">ABOUT</a></li>
+                <li><a href="sub01-wedding.html">웨딩사진</a></li>
+                <li><a href="sub02-family.html">가족사진</a></li>
+                <li><a href="sub03-friend.html">친구/커플사진</a></li>
+                <li><a href="sub04-estimation.html">견적문의</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <section>
+        <div class="photosection">
+            <div class="slider">
+                <div><img src="images/wedding2.jpg" width="100%" class="wedding-main"></div>
+                <div><img src="images/wedding3.jpg" width="100%" class="wedding-main"></div>
+                <div><img src="images/wedding4.jpg" width="100%" class="wedding-main"></div>
+                <div><img src="images/wedding5.jpg" width="100%" class="wedding-main"></div>
+                <div><img src="images/wedding6.jpg" width="100%" class="wedding-main"></div>
+            </div>
+            <div class="sliderword">
+                <p>웨딩사진 포트폴리오입니다.</p>
+            </div>
+        </div>
+        <div class="middle-menu">
+            <ul>
+                <li><a href="sub01-wedding.html"><img src="images/pic1.png"></a></li>
+                <li><a href="sub02-family.html"><img src="images/pic2.png"></a></li>
+                <li><a href="sub03-friend.html"><img src="images/pic3.png"></a></li>
+                <li><a href="sub04-estimation.html"><img src="images/pic4.png"></a></li>
+            </ul>
+
+        </div>
+        <div class="word">
+            <img src="images/main-word-sub01.png" width="100%">
+
+        </div>
+    </section>
+    <footer>
+        <div>
+            <p>서울시 중구 필동 302 (스타벅스 건물)</p>
+            <p>Tel. 02) 123-4567</p>
+            <p>COPYRIGHTⓒ 2019 STAR STUDIO. ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

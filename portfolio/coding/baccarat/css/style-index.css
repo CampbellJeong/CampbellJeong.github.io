@@ -1,0 +1,442 @@
+.wrap0 {
+    width: 1200px;
+    margin-left: 0px;
+    background-color: #eee;
+    height: 730px;
+    position: relative;
+}
+
+.wrap {
+    background: url("../images/board.png") no-repeat;
+    background-size: cover;
+    background-position: left top;
+    width: 1200px;
+    height: 590px;
+
+}
+/*칩위치*/
+.pchip{
+    position: absolute;
+    z-index: 18;
+    top:380px;
+    left: 220px;
+}
+.bchip{
+    position: absolute;
+    z-index: 18;
+    top:380px;
+    left:867px;
+}
+.tchip{
+    position: absolute;
+    z-index: 18;
+    top:324px;
+    left: 550px;
+
+}
+/* 칩버튼 css*/
+.chipbutton-2k{
+    border-radius: 50px;
+    width: 57px;
+    height: 57px;
+    background: url(../images/2k.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-color: #9f9f9f;
+    cursor: pointer;
+}
+
+.chipbutton-10k{
+    border-radius: 62px;
+    width: 62px;
+    height: 62px;
+    background: url(../images/10k.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-color: #398354;
+    cursor: pointer;
+}
+
+.chipbutton-50k{
+    border-radius: 65px;
+    width: 65px;
+    height: 65px;
+    background: url(../images/50k.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-color: #797979;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}
+
+/*********************/
+
+/*모든 Input disabled*/
+
+
+
+.pchip-2kchip{
+    width: 80px;
+    opacity: 0.6;
+    display:none;
+
+}
+
+.pchip-10kchip{
+    width: 100px;
+    opacity: 0.7;
+    display:none;
+}
+
+.pchip-50kchip{
+    width: 120px;
+    opacity: 0.8;
+    display:none;
+}
+
+.bchip-2kchip{
+    width: 80px;
+    opacity: 0.6;
+    display:none;
+}
+
+.bchip-10kchip{
+    width: 100px;
+    opacity: 0.7;
+    display:none;
+}
+
+.bchip-50kchip{
+    width: 120px;
+    opacity: 0.8;
+    display:none;
+}
+
+.tchip-2kchip{
+    width: 80px;
+    opacity: 0.6;
+    display:none;
+}
+
+.tchip-10kchip{
+    width: 100px;
+    opacity: 0.7;
+    display:none;
+}
+
+.tchip-50kchip{
+    width: 120px;
+    opacity: 0.8;
+    display:none;
+}
+
+
+
+
+/*******************************************/
+
+#chip {
+    position: absolute;
+    top: 495px;
+    left: 490px;
+    margin: 0 auto;
+}
+
+#chip h3 {
+    padding-left: 65px;
+    padding-top: 5px;
+     color: aliceblue;
+    font-size: 17px;
+}
+
+#chip img {
+    margin: 3px;
+}
+.2kchip{
+    width: 50px;
+}
+
+
+#chip img:hover {
+   border: 1px solid white;
+    border-radius: 50px;
+    /*opacity: 0.8;*/
+    cursor: pointer;
+}
+
+/*카드배열*/
+.card0 img {
+    position: absolute;
+    border-radius: 5px;
+    width: 80px;
+    height: 115px;
+}
+
+.playercard1 {
+    left: 180px;
+    top: 170px;
+    transform: rotate(4DEG)
+}
+
+
+.playercard2 {
+    left: 230px;
+    top: 170px;
+    transform: rotate(4DEG)
+}
+
+.playercard3 {
+    left: 280px;
+    top: 170px;
+    transform: rotate(4DEG)
+}
+
+.bankercard1 {
+    left: 850px;
+    top: 170px;
+    transform: rotate(-2DEG);
+    z-index: 14;
+
+}
+
+.bankercard2 {
+    left: 900px;
+    top: 170px;
+    transform: rotate(-2DEG);
+    z-index: 15;
+}
+
+.bankercard3 {
+    left: 950px;
+    top: 170px;
+    transform: rotate(-6DEG);
+    z-index: 16;
+}
+
+.sixcard {
+    top: -1000px;
+}
+
+
+#playerbet {
+    width: 120px;
+    height: 40px;
+    background: url(../images/playerbet.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 500px;
+    left: 212px;
+    opacity: 0.9;
+    cursor: pointer;
+    border-radius: 18px;
+}
+
+#bankerbet {
+    width: 120px;
+    height: 40px;
+    background: url(../images/bankerbet.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 500px;
+    left: 870px;
+    opacity: 0.9;
+    cursor: pointer;
+    border-radius: 18px;
+}
+
+
+#tiebet {
+    width: 120px;
+    height: 40px;
+    background: url(../images/tiebet.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 443px;
+    left: 540px;
+    opacity: 0.9;
+    cursor: pointer;
+    border-radius: 18px;
+}
+
+#start {
+    width: 140px;
+    height: 45px;
+    background: url(../images/start.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 180px;
+    left: 470px;
+    opacity: 0.9;
+    cursor: pointer;
+    border-radius: 18px;
+}
+
+#reset {
+    width: 140px;
+    height: 45px;
+    background: url(../images/reset.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 180px;
+    left: 615px;
+    opacity: 0.9;
+    cursor: pointer;
+    border-radius: 18px;
+}
+
+#allin {
+    width: 80px;
+    height: 45px;
+    background: url(../images/allin.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 535px;
+    right: 10px;
+    opacity: 0.9;
+    cursor: pointer;
+    border-radius: 18px;
+}
+
+.calc {
+    height: 120px;
+    margin-left: 380px;
+}
+
+
+.calc table {
+
+    padding: 9px;
+}
+
+.calc table tr {
+    height: 24px;
+}
+
+.calc table tr td {
+    font-size: 17px;
+}
+
+
+.calc table input {
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #efefef;
+}
+
+.totalamount input {
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #efefef;
+    text-align: right;
+}
+
+.wrap0 div {
+    float: left;
+}
+
+.totalamount h3 {
+    padding: 50px;
+}
+
+.totalamount input {
+    width: 80px;
+}
+
+.resultword {
+    position: absolute;
+    top: 53px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-size: 27px;
+    color:azure;
+    font-family: 'Arial';
+    filter: drop-shadow(4px 4px 2px black); /*필터 드롭쉐도우 수평거리, 수직거리, 퍼지는정도*/
+    font-family: 'sunflower', cursive;
+    font-weight: 600;
+}
+
+footer{
+    cursor: pointer;
+}
+
+.chipword{
+    font-family: 'sunflower', cursive; 
+}
+
+/******기록지*********/
+.record{
+     position: absolute;
+    z-index: 25;
+    top:600px;
+    left: 20px;
+    width: 305px;
+    height: 103px;
+    background-color:white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.record ul{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    margin: 2px 2px;
+ 
+}
+
+.record li{
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    margin: 2px 0px;
+   border:3px solid white;
+}
+
+
+
+/*******************************/
+
+/*****게임방법***********/
+.gamerule{
+    position: absolute;
+    top:552px;
+    left: 8px;
+    z-index: 26;
+    color: #cdcdcd;
+    border: 2px solid #828282;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    
+}
+
+
+/********************/
+
+
+
+footer div {
+    display: block;
+    background-color: darkgray;
+    position: relative;
+    width: 1200px;
+    height: 50px;
+    text-align: center;
+}
+
+footer div p {
+    padding: 20px;
+}

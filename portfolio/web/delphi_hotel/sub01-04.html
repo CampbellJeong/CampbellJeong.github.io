@@ -1,0 +1,272 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>델파이 호텔 메인 페이지</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style-sub01.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--<script src="js/jquery.js"></script>-->
+    <script>
+        /*슬라이드 메뉴*/
+        $(function() {
+            $("#menubar").hide();
+            $(".menu li a").on("mouseover", function() {
+                $("#menubar").slideDown(300);
+            });
+            $(".menu li a").on("mouseleave", function() {
+                $(this).css("background", "none")
+            });
+            $("#menubar").on("mouseleave", function() {
+                $("#menubar").slideUp(500);
+            });
+            $("#menubar li a").on("mouseover", function() {
+                $(this).css("background", "lightgrey")
+            });
+            $("#menubar li a").on("mouseleave", function() {
+                $(this).css("background", "none")
+            });
+        });
+
+        $(function() {
+            $(".jap").hide();
+            $(".kor a").on("click", function() {
+                $(".login2").css("background-color", "black");
+                $(".login2 li a").css("color", "white");
+                $(".login2 li a").css("font-weight", "600");
+                $(".jap").slideDown(300);
+            });
+            $(".login").on("mouseover", function() {
+                $("#menubar").slideUp(300);
+            });
+
+            $(".header2").on("mouseleave", function() {
+
+                $(".login2").css("background", "none");
+                $(".login2 li a").css("color", "#302014");
+                $(".jap").slideUp(10);
+            });
+        });
+
+        $(function() {
+            /*룸타입별 지정*/
+            $(".inner li:nth-child(4) a").css("background", "#77726d");
+            $(".inner li:nth-child(4) a").css("color", "white");
+
+            $(".inner li a").on("mouseover", function() {
+                $(this).css("background", "#77726d");
+                $(this).css("color", "white");
+            });
+            $(".inner li a").on("mouseleave", function() {
+                $(this).css("background", "none");
+                $(this).css("color", "#77726d");
+                $(".inner li:nth-child(4) a").css("background", "#77726d");
+                $(".inner li:nth-child(4) a").css("color", "white");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="maindiv">
+        <header class="header0">
+            <div class="header1">
+                <a href="index.html"><img src="images/logo.png"></a>
+            </div>
+            <div class="header2">
+                <section class="login">
+ <ul class="login1">
+                        <li class="loginbutton"><a onclick="loginPopupOpen()" style="cursor: pointer">로그인</a> | <a onclick="loginPopupOpen()" style="cursor: pointer">예약확인</a></li>
+                    </ul>
+                       <div class="login2">
+                        <img src="images/earth.png">
+                        <select class="lang" onchange="location = this.options[this.selectedIndex].value;">
+                        <option value="index.html">한국어</option>
+                            <option value="index-english.html">English</option>
+                            <option value="index-japanese.html">日本語</option>
+                        <option value="index-chinese.html">中文</option>
+                        </select>
+                    </div>
+                </section>
+
+                <section class="menu">
+                <ul>
+                        <li><a href="sub00.html">호텔소개</a></li>
+                        <li><a href="sub01-01.html">객실안내</a></li>
+                        <li><a href="sub02.html">호텔위치</a></li>
+                        <li><a href="sub02.html">주변명소</a></li>
+                    </ul>
+                </section>
+            </div>
+        </header>
+    </div>
+    <div id="wrap0">
+        <div id="menubar">
+
+            <div>
+                <ul>
+                    <li><a href="sub00.html">호텔소개</a></li>
+                    <li><a href="sub00.html">예약지원</a></li>
+                    <li><a href="sub00.html">인재채용</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="sub01-01.html">스탠다드</a></li>
+                    <li><a href="sub01-02.html">디럭스</a></li>
+                    <li><a href="sub01-03.html">스위트</a></li>
+                    <li><a href="sub01-04.html">프레지던트</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="sub02.html">호텔위치</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="sub02.html">주변명소</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="wrap">
+        <div class="section1">
+            <div class="inner">
+                <h6>객실안내</h6>
+                <hr color="#77726d" width="200px">
+                <ul>
+                    <li><a href="sub01-01.html">스탠다드 객실</a></li>
+                    <li><a href="sub01-02.html">디럭스 객실</a></li>
+                    <li><a href="sub01-03.html">스위트 객실</a></li>
+                    <li><a href="sub01-04.html">프레지던트 객실</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section2">
+            <div class="upnav">
+                <ul>
+                    <li><a href=""><img src="images/home.gif" width="20px" height="20px" style="margin-bottom: 3px"></a></li>
+                    <li>&gt;</li>
+                    <li><a href="">객실안내</a></li>
+                    <li>&gt;</li>
+                    <li><a href="sub01-04.html">프레지던트 객실</a></li>
+                </ul>
+            </div>
+
+            <br><br>
+            <div class="upline"></div>
+            <br>
+            <br>
+
+            <div class="smartchoice">
+                <table>
+                    <tr>
+                        <td class="smart1">SMART CHOICE - <span class="smart2">Room & Breakfast</span></td>
+                    </tr>
+                    <tr>
+                        <td class="smart3">홈페이지 또는 APP 예약시 1만원 할인 특전을 제공합니다.</td>
+                    </tr>
+                    <tr>
+                        <td>기간 : 2018-10-01 ~ 2018-12-31</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <br>
+            <hr class="dashed">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <table class="smart4">
+                <tr class="smart4-1">
+                    <td class="smart4-2">
+                        <div>Smart Choice - Room & Break fast</div>
+                    </td>
+                    <td>
+                        <p>프레지던트 객실 1실 1박</p>
+                        <p>조식 4인</p>
+                        <p>무료 WIFI / 피트니스 센터, 수영장, 10평 회의실 무료 이용</p>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="roomphoto">
+                <div>
+                    <h2>프레지던트 객실</h2>
+                    <img src="images/presidential.jpg" width="420px" height="218px">
+                    <h4>편안함과 쾌적함이 인상적인 휴식 공간</h4>
+                </div>
+                <div>
+                    <h2>조식 2인</h2>
+                    <img src="images/breakfast.jpg" width="420px" height="218px">
+                    <h4>델파이 호텔의 엄선된 메뉴와 신선한 음식</h4>
+                </div>
+            </div>
+            <div class="infomessage" style="width:100%">
+                <div>
+                    <h2>※ 이용안내</h2>
+                    <br>
+                    <p>- 객실 상황에 따라 일부 날짜는 조기 마감 될 수 있습니다.</p>
+                    <p>- 체크인은 오후 2시 이후, 체크아웃은 정오까지 입니다.</p>
+                    <p>- 성인 2인 1실 기준 1박 요금이며, 세금은 별도입니다.</p>
+                    <p>- 피트니스 센터는 안전상의 이유로 16세 이상만 입장 가능합니다.</p>
+                    <br>
+                    <br>
+                    <p>□ 예약 취소/변경 및 No-show 안내</p>
+                    <p>- 숙박예정일 1일전 18시까지는 위약금 없이 취소 및 변경됩니다.</p>
+                    <p>- 숙박예정일 1일전 18시 이후 취소/변경 시, 숙박 요금의 80%가 위약금으로 부과됩니다.</p>
+                    <p>- 숙박예정일 노쇼(No-show) 시, 숙박 요금의 100%가 위약금으로 부과됩니다.</p>
+                    <br>
+                    <br>
+                    <p>□ 호텔 이용에 대한 추가 문의 사항은 아래 예약실로 문의해주시기 바랍니다.</p>
+                    <p>- 델파이호텔 : 02) 2590-0900</p>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <br><br><br>
+    </div>
+
+    <div class="maindiv2">
+        <footer class="footer0">
+            <section>
+                <span id="footer1">
+                    <h2>델파이호텔</h2>
+                </span>
+                <span id="footer2">
+                    <pre>서울특별시 역삼동 경충길 210 (우:04389)   TEL 02-4423-5522   사업자등록번호 201-73-55892</pre></span>
+                <span id="footer3">
+                    <a href="">ENGLISH</a>
+                    <a href="">日本語</a>
+                    <a href="">中文</a>
+                </span>
+            </section>
+        </footer>
+    </div>
+        <script>
+           //로그인 팝업창
+        function loginPopupOpen() {
+
+            var popUrl = "index-login.html"; //팝업창에 출력될 페이지 URL
+
+            var popupX = (window.screen.width / 2) - (400 / 2);
+            // 만들 팝업창 좌우 크기의 1/2 만큼 보정값 뺌
+            var popupY = (window.screen.height / 2) - (400 / 2);
+            // 만들 팝업창 상하 크기의 1/2 만큼 보정값으로 빼주었음
+            var popOption = "width=420, height=420, resizable=no, scrollbars=no, status=no, left=" + popupX + ", right=" + popupY + ", screenX=" + popupX + ", screenY=" + popupY;
+
+            window.open(popUrl, "", popOption);
+        }
+        //////
+    </script>
+</body>
+</html>

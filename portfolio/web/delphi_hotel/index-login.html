@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+       $(".login").click(function(){
+           alert("아이디 또는 비밀번호가 정확하지 않습니다.");
+}); 
+           $(".id").click(function(){
+           $(this).val("");         
+});    
+            $(".pw").click(function(){
+           $(this).val("");
+           $(this).attr("type","password");
+});          
+    });
+        
+           ///리멤버 부분
+         var click=0;
+      var remember=function(){
+          click++;
+          console.log(click);
+          if(click%2!==0){
+            alert("PC방 등 공공장소에서는 선택하지마세요.");
+              }
+           else{
+          return false;
+      }
+        }  
+    </script>
+    <style>
+        body{
+        width: 400px;
+        height: 400px;
+        background-color: #f7f7f7;
+    }
+    
+    .main{
+        width: 310px;
+        height: 400px;
+        background-color: #f7f7f7;
+        margin: 0 auto;
+        text-align: center;
+    }
+    img{
+        opacity: 0.5;
+        margin-bottom: 30px;
+    }
+    
+    .idpw{
+        width: 300px;
+        height: 30px;
+        margin: 3px 0px;
+        color: #ababab;
+        font-size: 16px;
+    }
+    
+    .login{
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 304px;
+        padding: 10px 0px;;
+        color: white;
+        background-color: #626262;
+        cursor: pointer;
+    }
+    
+    .remember{
+        text-align: left;
+        font-size: 13px;
+    }
+    
+    .remember input{
+        vertical-align: middle;
+    }
+        
+          .findid{
+       text-align: left;
+    }
+    
+    .findid a{
+        text-decoration: none;
+        font-size: 14px;
+        color:#878787;
+    }
+</style>
+</head>
+<body>
+    <div class="main">
+        <h3><img src="images/logo.png"></h3>
+        <input type="text" value="아이디" class="idpw id">
+        <input type="text" value="비밀번호" class="idpw pw">
+        <div class="login">로그인</div>
+        <div class="remember"><span class="checkbox" onclick="remember()"><input type="checkbox" class="checkbox"></span>아이디 저장</div>
+        <br>
+        <hr>
+        <div class="findid"><a href="#">아이디, 비밀번호 찾기</a></div>
+        <div class="findid"><a href="#">회원가입</a></div>
+    </div>
+</body>
+
+</html>

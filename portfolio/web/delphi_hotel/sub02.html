@@ -1,0 +1,243 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>델파이 호텔 메인 페이지</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style-sub02.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--<script src="js/jquery.js"></script>-->
+
+    <script>
+        $(function() {
+            $("#menubar").hide();
+            $(".menu li a").on("mouseover", function() {
+                $("#menubar").slideDown(300);
+            });
+            $(".menu li a").on("mouseleave", function() {
+                $(this).css("background", "none")
+
+            });
+            $("#menubar").on("mouseleave", function() {
+                $("#menubar").slideUp(500);
+            });
+            $("#menubar li a").on("mouseover", function() {
+                $(this).css("background", "lightgrey")
+            });
+            $("#menubar li a").on("mouseleave", function() {
+                $(this).css("background", "none")
+            });
+        });
+
+
+        $(function() {
+            $(".jap").hide();
+            $(".kor a").on("click", function() {
+                $(".login2").css("background-color", "black");
+                $(".login2 li a").css("color", "white");
+                $(".login2 li a").css("font-weight", "600");
+                $(".jap").slideDown(300);
+            });
+            $(".login").on("mouseover", function() {
+                $("#menubar").slideUp(300);
+            });
+
+
+
+            $(".header2").on("mouseleave", function() {
+
+                $(".login2").css("background", "none");
+                $(".login2 li a").css("color", "#302014");
+                $(".jap").slideUp(10);
+            });
+
+        });
+    </script>
+
+
+</head>
+
+
+<body>
+
+    <div class="maindiv">
+        <header class="header0">
+            <div class="header1">
+                <a href="index.html"><img src="images/logo.png"></a>
+            </div>
+            <div class="header2">
+                <section class="login">
+                    <ul class="login1">
+                        <li class="loginbutton"><a onclick="loginPopupOpen()" style="cursor: pointer">로그인</a> | <a onclick="loginPopupOpen()" style="cursor: pointer">예약확인</a></li>
+                    </ul>
+                    <div class="login2">
+                        <img src="images/earth.png">
+                        <select class="lang" onchange="location = this.options[this.selectedIndex].value;">
+                            <option value="index.html">한국어</option>
+                            <option value="index-english.html">English</option>
+                            <option value="index-japanese.html">日本語</option>
+                            <option value="index-chinese.html">中文</option>
+                        </select>
+                    </div>
+                </section>
+
+                <section class="menu">
+                    <ul>
+                        <li><a href="sub00.html">호텔소개</a></li>
+                        <li><a href="sub01-01.html">객실안내</a></li>
+                        <li><a href="sub02.html">호텔위치</a></li>
+                        <li><a href="sub02.html">주변명소</a></li>
+                    </ul>
+                </section>
+            </div>
+        </header>
+    </div>
+    <div id="wrap0">
+        <div id="menubar">
+
+            <div>
+                <ul>
+                    <li><a href="sub00.html">호텔소개</a></li>
+                    <li><a href="sub00.html">예약지원</a></li>
+                    <li><a href="sub00.html">인재채용</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="sub01-01.html">스탠다드</a></li>
+                    <li><a href="sub01-02.html">디럭스</a></li>
+                    <li><a href="sub01-03.html">스위트</a></li>
+                    <li><a href="sub01-04.html">프레지던트</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="sub02.html">호텔위치</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="sub02.html">주변명소</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="wrap">
+        <!--본페이지-->
+        <br>
+        <br>
+        <center>
+            <h1 style="font-size: 30px;" class="locationword">호텔위치</h1>
+        </center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center>
+            <section id="map">
+                <h1 style="font-size: 22px;">서울특별시 역삼동 경충길 210</h1><br>
+                <hr width="310" size="100" color="#896b38"><br>
+            </section>
+        </center>
+
+        <table class="smart4">
+            <tr class="smart4-1">
+                <td class="smart4-2">
+                    <div>
+                        <h4>승용차 이용</h4>
+                    </div>
+                </td>
+                <td>
+                    <p>1. 테헤란로 삼성동 방면으로 직진.</p>
+                    <p>2. 역삼역 사거리 포스코빌딩 앞에서 좌회전.</p>
+                    <p>3. 전방 50m 우측에 있는 GATE2(서문)를 통하여 지하주차장으로 진입.</p>
+                </td>
+            </tr>
+            <tr class="smart4-1">
+                <td class="smart4-2">
+                    <div>
+                        <h4>버스 이용</h4>
+                    </div>
+                </td>
+                <td>
+                    <p><img src="images/bluebus.png" width="3%">&nbsp;간선버스 – 146, 341, 360, 333, 740, N13(심야), N61(심야)</p>
+                    <p><img src="images/greenbus.png" width="3%">&nbsp;지선버스 – 3411</p>
+                    <p><img src="images/redbus.png" width="3%">&nbsp;광역버스 – 1100, 2000, 2000-1, 7007, 8001, 9414, 500-2, 9303</p>
+                </td>
+            </tr>
+            <tr class="smart4-1">
+                <td class="smart4-2">
+                    <div>
+                        <h4>지하철 이용</h4>
+                    </div>
+                </td>
+                <td class="subway">
+                    <p><img src="images/subway.png" width="2.8%">호선 역삼역 5, 6번 출구와 직접 연결된 통로로 진입</p>
+                </td>
+            </tr>
+
+
+        </table>
+
+        <br>
+        <br>
+        <br>
+        <center>
+            <section id="map" class="mapbottom">
+                <h1>지도</h1><br>
+                <hr width="200" size="100" color="#896b38"><br>
+                <h2 style="color: #896b38">M A P</h2>
+
+            </section>
+        </center>
+        <br><br>
+        <div id="iframediv">
+            <section id="iframe">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.627914557295!2d135.49922991469518!3d34.66409868044396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e76b8845eae3%3A0x47e6c4e1571ac13d!2sSwiss%C3%B4tel+Nankai%2C+Osaka!5e0!3m2!1sko!2skr!4v1540304236096" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+            </section>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="maindiv">
+        <footer class="footer0">
+            <section>
+                <span id="footer1">
+                    <h2>델파이호텔</h2>
+                </span>
+                <span id="footer2">
+                    <pre>서울특별시 역삼동 경충길 210 (우:04389)   TEL 02-4423-5522   사업자등록번호 201-73-55892</pre></span>
+                <span id="footer3">
+                    <a href="">ENGLISH</a>
+                    <a href="">日本語</a>
+                    <a href="">中文</a>
+                </span>
+            </section>
+        </footer>
+    </div>
+    <script>
+        //로그인 팝업창
+        function loginPopupOpen() {
+
+            var popUrl = "index-login.html"; //팝업창에 출력될 페이지 URL
+
+            var popupX = (window.screen.width / 2) - (400 / 2);
+            // 만들 팝업창 좌우 크기의 1/2 만큼 보정값 뺌
+            var popupY = (window.screen.height / 2) - (400 / 2);
+            // 만들 팝업창 상하 크기의 1/2 만큼 보정값으로 빼주었음
+            var popOption = "width=420, height=420, resizable=no, scrollbars=no, status=no, left=" + popupX + ", right=" + popupY + ", screenX=" + popupX + ", screenY=" + popupY;
+
+            window.open(popUrl, "", popOption);
+        }
+        //////
+    </script>
+
+
+</body>
+
+
+</html>

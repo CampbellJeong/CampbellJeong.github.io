@@ -1,1 +1,608 @@
-<h3>sdfsdsfdsfd-----jjjjjjjjjjjjjjjjj</h3>
+<!DOCTYPE html>
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Matthew Howell" />
+    <meta name="description" content="fullPage continuous scrolling demo." />
+    <meta name="keywords" content="fullpage,jquery,demo,scroll,loop,continuous" />
+    <meta name="Resource-type" content="Document" />
+
+
+
+    <title>정성환 포트폴리오</title>
+
+    <!--추가폰트-->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
+
+    <!--라인프로그레스-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/jquery.lineProgressbar.css" rel="stylesheet" type="text/css">
+
+    <!--라이트갤러리-->
+    <link href="css/lightgallery.css" rel="stylesheet" type="text/css">
+    <!--<script src="js/lg-thumbnail.min.js"></script>
+    <script src="js/lg-fullscreen.min.js"></script>-->
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+    <script src="js/email.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <ul id="menu">
+        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">About</a></li>
+        <li data-menuanchor="3rdPage"><a href="#3rdPage">Portfolio</a></li>
+        <li data-menuanchor="4thpage"><a href="#4thpage">Contact</a></li>
+    </ul>
+
+
+    <div id="fullpage">
+        <div class="section active" id="section0">
+            <!--1번째섹션-->
+            <h1>정성환</h1>
+            <p>Web developer & UI/UX Designer</p>
+            <img src="images/balloon1.png" width="90px" class="balloon1">
+            <img src="images/balloon2.png" width="50px" class="balloon2">
+            <img src="images/balloon3.png" width="50px" class="balloon3">
+            <img src="images/balloon4.png" width="15px" class="balloon4">
+
+        </div>
+        <div class="section" id="section1">
+
+
+
+            <!--비디오-->
+            <video autoplay loop id="video-background" muted plays-inline>
+                <source src="videos/Blurred%20Seaside%20Sunset%20with%20Water%20Sound.mp4" type="video/mp4">
+            </video>
+            <!--비디오-->
+
+
+
+
+            <!--2번째섹션-->
+            <div class="slide" id="slide1">
+                <div class="intro0">
+                    <div class="bulb">
+                        <img src="images/bulb.png">
+                        <h3 style="font-weight: bold;font-size: 19px;">정성환</h3>
+                        <h2>1986년 9월 6일</h2>
+                    </div>
+                    <div class="intoduce" style="text-align: left;">
+                        <h4 style="font-size: 25px;">"빅픽처를 보는 웹개발자"</h4>
+                        <h1 style="font-size: 18px;margin-top: 10px;">예전부터 웹개발 쪽으로 하고싶은 것이 많았습니다. 그래서 안정적이던 대기업을 박차고 나와 ICT 폴리텍대학의 "스마트 UI/UX 웹개발자" 과정을 등록하였습니다.<br>처음에는 적지 않은 나이에 웹프로그래밍과 디자인을 함께 배우며 힘들었습니다. <br>하지만 떠오르는 아이디어를 코딩으로 구현해보고, 제 스스로 웹페이지를 만들고 배워 나가면서 보람을 느꼈고, 이 일이 적성에 맞다고 느꼈습니다.<br>그리고 다방면에 관심이 많아 경영서적, 역사책 등을 많이 읽었고, 오랜 해외생활로 인해 외국어에 능숙합니다. 이러한 폭넓은 시야와 저의 웹개발 역량을 활용하여 명품 웹페이지를 만드는 것이 제 목표입니다. </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide" id="slide2">
+
+                <div class="intro1">
+                    <div class="career">
+                        <div class="container1">
+                            <h1>Programing</h1>
+                            <h2>jQuery</h2>
+                            <div id="jq"></div>
+                            <h2>HTML5</h2>
+                            <div id="html"></div>
+                            <h2>CSS3</h2>
+                            <div id="css"></div>
+                            <h3>기본적인 하드코딩을 할 수 있으며, Java script/jQuery 오픈소스를 활용하여 고급코딩을 구현할 수 있습니다.<br>CSS3를 활용하여 수준급의 레이아웃을 구성할 수 있습니다.</h3>
+                        </div>
+                        <div class="container2">
+                            <h1>Design</h1>
+                            <h2>Photoshop CC</h2>
+                            <div id="photoshop"></div>
+                            <h2>Illustrator CC</h2>
+                            <div id="illustrator"></div>
+                            <h2>PPT/Excel</h2>
+                            <div id="ppt"></div>
+                            <h3>포토샵, 일러스트레이터를 이용하여 사진 보정 및 광고 전단지, 팜플렛 등을 제작할 수 있습니다.<br>다년간의 실무경험으로 사무 소프트웨어에 능숙합니다.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section2">
+            <div class="slide" id="slide1">
+                <h1>Web site</h1>
+                <div id="gallery1" class="intro2">
+                    <!--web 포트폴리오-->
+                    <ul>
+                        <li>
+                            <div class="introWeb">
+                                <a href="portfolio/web/shoppingmall/index.html" target="_blank"><img src="images/web1.jpg">
+                                    <p>쇼핑몰</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="introWeb">
+                                <a href="portfolio/web/delphi_hotel/index.html" target="_blank"><img src="images/web2.jpg">
+                                    <p>호텔 사이트</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="introWeb">
+                                <a href="portfolio/web/star_studio/index.html" onClick="window.open(this.href, '', 'width=600, height=750'); return false;"><img src="images/web3.jpg">
+                                    <p>모바일웹</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="introWeb">
+                                <a href="portfolio/web/blog_homepage/index.html" target="_blank"><img src="images/web4.jpg">
+                                    <p>반응형 블로그</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="introWeb">
+                                <a href="portfolio/web/CISCO_company/index.html" target="_blank"><img src="images/web5.png">
+                                    <p>기업 사이트</p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--프로그래밍 포트폴리오-->
+            <div class="slide" id="slide2">
+                <h1>Programing</h1>
+                <div id="gallery2" class="intro2">
+                    <ul>
+                        <li>
+                            <div class="introWeb">
+                                <a href="portfolio/coding/baccarat/index.html" onClick="window.open(this.href, '', 'width=1200, height=1000'); return false;"><img src="images/web6.jpg">
+                                    <p>미니 바카라</p>
+                                </a>
+                            </div>
+                        </li>
+                           <li>
+                            <div class="introWeb">
+                                <a href="portfolio/coding/forexexchange/index.html" target="_blank"><img src="images/web7.jpg">
+                                    <p>환율우대 계산기</p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--상업용 디자인 포트폴리오-->
+            <div class="slide" id="slide3">
+                <h1>Design works</h1>
+                <div id="gallery3" class="intro2">
+                    <ul id="lightgallery" class="list-unstyled row">
+                        <li data-src="portfolio/design/xbanner.jpg" data-sub-html="<h4>엑스배너</h4><p></p>">
+                            <div class="intro2-1">
+                                <img src="portfolio/design/xbanner0.jpg">
+                                <p>엑스배너</p>
+                            </div>
+                        </li>
+
+                        <li data-src="portfolio/design/invitation.jpg" data-sub-html="<h4>청첩장</h4><p></p>">
+                            <div class="intro2-1">
+                                <img src="portfolio/design/invitation0.jpg">
+                                <p>청첩장</p>
+                            </div>
+                        </li>
+                        <li data-src="portfolio/design/leaflet.jpg" data-sub-html="<h4>리플렛</h4><p></p>">
+                            <div class="intro2-1">
+                                <img src="portfolio/design/leaflet0.jpg">
+                                <p>리플렛</p>
+                            </div>
+                        </li>
+                        <li data-src="portfolio/design/banner.jpg" data-sub-html="<h4>웹배너</h4><p></p>">
+                            <div class="intro2-1">
+                                <img src="portfolio/design/banner0.jpg">
+                                <p>웹배너</p>
+                            </div>
+                        </li>
+                        <li data-src="portfolio/design/namecard.jpg" data-sub-html="<h4>명함</h4><p></p>">
+                            <div class="intro2-1">
+                                <img src="portfolio/design/namecard0.jpg">
+                                <p>명함</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <!--크레이티브 워크 포트폴리오-->
+            <div class="slide" id="slide4">
+                <h1>Creative works</h1>
+                <div id="gallery4" class="intro2">
+                    <ul id="lightgallery2" class="list-unstyled row">
+                        <li data-src="portfolio/design/aa.jpg" data-sub-html="<h4>프로듀스 48</h4><p></p>">
+                            <div class="intro2-1">
+                                <img src="portfolio/design/aa0.jpg" class="aa00">
+                                <p>프듀 48</p>
+                            </div>
+                        </li>
+
+                        <li data-src="portfolio/design/bb.jpg" data-sub-html="<h4>메탈글자</h4><p></p>">
+                            <div class="intro2-1">
+                                <img src="portfolio/design/bb0.jpg" class="bb00">
+                                <p>메탈글자</p>
+                            </div>
+                        </li>
+
+                        <li data-src="portfolio/design/cc.jpg" data-sub-html="<h4>블렌딩효과</h4><p></p>">
+                            <div class="intro2-1">
+                                <img src="portfolio/design/cc0.jpg" class="cc00">
+                                <p>블렌딩효과</p>
+                            </div>
+                        </li>
+
+                        <li data-src="portfolio/design/dd.jpg" data-sub-html="<h4>사라지는달</h4><p></p>">
+                            <div class="intro2-1">
+                                <img src="portfolio/design/dd0.jpg" class="dd00">
+                                <p>사라지는 달</p>
+                            </div>
+                        </li>
+                        <li data-src="portfolio/design/ee.jpg" data-sub-html="<h4>혼돈의 대륙</h4><p></p>">
+                            <div class="intro2-1">
+                                <img src="portfolio/design/ee0.jpg" class="ee00">
+                                <p>혼돈의 대륙</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div class="intro contacttop">
+                <h1>정성환</h1>
+                <p>dreamer2020@nate.com</p>
+                <p>010 5809 8834</p>
+            </div>
+            <div class="emailbox">
+                <div class="input">
+                    <h2>아래로 문의 주세요.</h2>
+                    <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxd7fiYuVjfwTyBmjzLFsnfpRJTM1-nK6JJv74cIiIfsxuyXb0/exec" target="virtualif">
+
+                        <div class="emailname">
+                            <h4>이름:</h4>
+                            <input type="text" name="name" id="emailname">
+                        </div>
+
+                        <div class="emailmessage">
+                            <h4>메시지:</h4>
+                            <textarea name="message" id="emailmessage" style="resize: none"></textarea>
+                        </div>
+
+                        <div class="emailaddress">
+                            <h4>답장 받으실 메일 주소:</h4>
+                            <input type="email" name="email" id="emailaddress">
+                        </div>
+
+                        <div><input type="submit" value="보내기" id="submit"></div>
+                    </form>
+                    <iframe id="if" name="virtualif" onload="ifmsg()"></iframe>
+                </div>
+            </div>
+
+            <footer>
+                <h2>COPYRIGHT 2018 JUNGSUNGHWAN. ALL RIGHT RESERVED.</h2>
+            </footer>
+        </div>
+    </div>
+
+    <!--------------------------------스크립트 영역------------------------------------------------>
+
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript" src="js/examples.js"></script>
+    <!-- 페이지 넘기는 js-->
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            sectionsColor: ['#1bbc9b', '', 'none', 'lightblue', '#ccddff'],
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+            /* navigation: true,
+             navigationTooltips: ['', '', '',''],
+             showActiveTooltip: true,*/
+            menu: '#menu',
+            slidesNavigation: true,
+            lazyLoad: true
+        });
+
+    </script>
+
+    <script>
+        //스윙
+        $(function() {
+            function swing() {
+                $('.balloon1').animate({
+                    'top': '40%'
+                }, 600).animate({
+                    'top': '40.8%'
+                }, 600, swing);
+            }
+            swing();
+        });
+        $(function() {
+            function swing() {
+                $('.balloon2').animate({
+                    'top': '30%'
+                }, 600).animate({
+                    'top': '30.5%'
+                }, 600, swing);
+            }
+            swing();
+        });
+        $(function() {
+            function swing() {
+                $('.balloon3').animate({
+                    'top': '24%'
+                }, 600).animate({
+                    'top': '24.3%'
+                }, 600, swing);
+            }
+            swing();
+        });
+        $(function() {
+            function swing() {
+                $('.balloon4').animate({
+                    'top': '23%'
+                }, 600).animate({
+                    'top': '23.2%'
+                }, 600, swing);
+            }
+            swing();
+        });
+
+    </script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.lineProgressbar.js"></script>
+    <script>
+        var statement = 0;
+        //라인 프로그레스
+
+
+        $('#jq').LineProgressbar({
+            percentage: 0,
+            radius: '3px',
+            height: '20px',
+        });
+        $('#html').LineProgressbar({
+            percentage: 0,
+            radius: '3px',
+            height: '20px',
+            fillBackgroundColor: '#DA4453'
+        });
+        $('#css').LineProgressbar({
+            percentage: 0,
+            radius: '3px',
+            height: '20px',
+            fillBackgroundColor: '#E0C341'
+        });
+        $('#photoshop').LineProgressbar({
+            percentage: 0,
+            radius: '3px',
+            height: '20px',
+        });
+        $('#illustrator').LineProgressbar({
+            percentage: 0,
+            radius: '3px',
+            height: '20px',
+            fillBackgroundColor: '#DA4453'
+        });
+        $('#ppt').LineProgressbar({
+            percentage: 0,
+            radius: '3px',
+            height: '20px',
+            fillBackgroundColor: '#E0C341'
+        });
+
+
+        function progress() {
+            console.log("enter");
+
+            if (statement == 0) {
+                statement = 1;
+                console.log(statement);
+                $('#jq').LineProgressbar({
+                    percentage: 90,
+                    radius: '3px',
+                    height: '20px',
+
+                });
+                $('#html').LineProgressbar({
+                    percentage: 80,
+                    radius: '3px',
+                    height: '20px',
+
+                    fillBackgroundColor: '#DA4453'
+                });
+                $('#css').LineProgressbar({
+                    percentage: 80,
+                    radius: '3px',
+                    height: '20px',
+
+                    fillBackgroundColor: '#E0C341'
+                });
+                $('#photoshop').LineProgressbar({
+                    percentage: 90,
+                    radius: '3px',
+                    height: '20px',
+
+                });
+                $('#illustrator').LineProgressbar({
+                    percentage: 80,
+                    radius: '3px',
+                    height: '20px',
+
+                    fillBackgroundColor: '#DA4453'
+                });
+                $('#ppt').LineProgressbar({
+                    percentage: 80,
+                    radius: '3px',
+                    height: '20px',
+
+                    fillBackgroundColor: '#E0C341'
+                });
+
+            } else {
+                return false;
+            }
+
+
+
+        }
+
+        $(function() {
+            $(".fp-controlArrow").click(function() {
+                console.log("애로우 클릭 작동확인");
+                progress();
+            });
+        });
+
+        $(function() {
+            $(".career").mouseenter(function() {
+                progress();
+            });
+        });
+
+    </script>
+
+
+
+    <script>
+        var vid = document.getElementById("video-background");
+
+        function setPlaySpeed() {
+            vid.playbackRate = 0.3;
+        }
+        setPlaySpeed()
+
+    </script>
+    <script>
+        /*포트폴리오 마우스오버 효과*/
+        /*
+        $(function() {
+            $(".intro2 li img").on("mouseover", function() {
+                console.log("마우스오버");
+                $(this).animate({
+                    opacity: '0.9'
+
+
+                }, 100);
+
+            })
+            $(".intro2 li img").on("mouseleave", function() {
+                $(this).animate({
+                    position: 'relative',
+                    height: '250px',
+                    opacity: '1.0'
+
+                }, 30);
+
+            })
+
+
+        })*/
+
+    </script>
+    <!--라이트 갤러리-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#lightgallery').lightGallery();
+        });
+
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#lightgallery2').lightGallery();
+        });
+
+    </script>
+
+    <!--글자 페이드인-->
+    <script>
+        $(function() {
+            $(".intro2 ul li div").on("mouseover", function() {
+                console.log("페이드인 마우스오버 동작");
+                $(this).toggleClass("fadein");
+                $(".fadein p").stop().fadeIn("10");
+            });
+            $(".intro2 li").on("mouseout", function() {
+                console.log("페이드아웃 마우스오버 동작");
+                $(".intro2 ul li div").removeClass();
+                $(".intro2 li div p").stop().fadeOut("10");
+            });
+
+        })
+
+    </script>
+    <!--GIF 제어-->
+    <script>
+        $(function() {
+            $(".aa00").on("mouseover", function() {
+                $(this).attr("src", 'portfolio/design/aa00.gif');
+            });
+            $(".aa00").on("mouseout", function() {
+                $(this).attr("src", 'portfolio/design/aa0.jpg');
+            });
+            $(".bb00").on("mouseover", function() {
+                $(this).attr("src", 'portfolio/design/bb00.gif');
+            });
+            $(".bb00").on("mouseout", function() {
+                $(this).attr("src", 'portfolio/design/bb0.jpg');
+            });
+            $(".cc00").on("mouseover", function() {
+                $(this).attr("src", 'portfolio/design/cc00.gif');
+            });
+            $(".cc00").on("mouseout", function() {
+                $(this).attr("src", 'portfolio/design/cc0.jpg');
+            });
+            $(".dd00").on("mouseover", function() {
+                $(this).attr("src", 'portfolio/design/dd00.gif');
+            });
+            $(".dd00").on("mouseout", function() {
+                $(this).attr("src", 'portfolio/design/dd0.jpg');
+            });
+            $(".ee00").on("mouseover", function() {
+                $(this).attr("src", 'portfolio/design/ee00.gif');
+            });
+            $(".ee00").on("mouseout", function() {
+                $(this).attr("src", 'portfolio/design/ee0.jpg');
+            });
+
+        });
+
+    </script>
+
+    <!--아이프레임 작동-->
+    <script>
+        function ifmsg() {
+            alert("문의 감사합니다. 24시간 내로 답장드리겠습니다. ^^");
+        }
+
+    </script>
+
+
+
+    <!------------------------------------------->
+    <script src="js/lightgallery-picturefill.js"></script>
+    <script src="js/lightgallery-all.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+
+</body>
+
+</html>
